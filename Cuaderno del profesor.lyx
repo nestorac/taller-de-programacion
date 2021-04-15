@@ -93,7 +93,35 @@ Este documento contiene las soluciones a los ejercicios planteados en el
 \end_layout
 
 \begin_layout Part*
-4.3.8 Problema a resolver 1
+Encuentra el fallo
+\end_layout
+
+\begin_layout Section*
+Caso 1
+\end_layout
+
+\begin_layout Standard
+Sobra el punto y coma.
+\end_layout
+
+\begin_layout Section*
+Completa el código
+\end_layout
+
+\begin_layout Subsection*
+Caso 1
+\end_layout
+
+\begin_layout Standard
+(1) nombre
+\end_layout
+
+\begin_layout Standard
+(2) saludar
+\end_layout
+
+\begin_layout Part*
+Problema a resolver 1
 \end_layout
 
 \begin_layout Standard

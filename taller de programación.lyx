@@ -727,7 +727,7 @@ Bucle infinito
 \end_layout
 
 \begin_layout Chapter
-Desarollo de juegos e IA
+Desarrollo de juegos e IA
 \end_layout
 
 \begin_layout Standard
@@ -747,8 +747,80 @@ Actividades
 Encuentra el fallo
 \end_layout
 
+\begin_layout Subsection
+Caso 1 (python) (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+print(type(x));
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Completa el código
+\end_layout
+
+\begin_layout Subsection
+Caso 1 (python) (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class saludo:
+\end_layout
+
+\begin_layout Plain Layout
+
+    def saludar(self, nombre):
+\end_layout
+
+\begin_layout Plain Layout
+
+        print('Hola', (1)____________)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+nombre = input('Introduce tu nombre: ')
+\end_layout
+
+\begin_layout Plain Layout
+
+s = (2)___________()
+\end_layout
+
+\begin_layout Plain Layout
+
+s.saludar(nombre)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -756,11 +828,11 @@ Adivina qué sale
 \end_layout
 
 \begin_layout Section
-Averigua para qué sirve
+Interpreta el código
 \end_layout
 
 \begin_layout Subsection
-Caso 1 (lenguaje: Python)
+Caso 1 (Python)
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-3"
@@ -800,7 +872,7 @@ En este ejemplo la clave está en el operador **.
 \end_layout
 
 \begin_layout Subsection
-Caso 2 (lenguaje: Python)
+Caso 2 (Python)
 \end_layout
 
 \begin_layout Standard
@@ -925,12 +997,8 @@ Este programa trae cola, ya que el problema que resuelve tiene una complejidad
  elevada, y es la base de la criptografía moderna.
 \end_layout
 
-\begin_layout Section
-Leyendo código en Python
-\end_layout
-
 \begin_layout Subsection
-Ejemplo 1 (fácil)
+Caso 3 (python) (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -974,7 +1042,7 @@ print(z)
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 2 (fácil)
+Caso 4 (python) (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -1007,7 +1075,7 @@ print(MyClass)
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 3 (fácil)
+Caso 5 (python) (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -1059,7 +1127,7 @@ print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 4 (moderado)
+Caso 6 (python) (moderado)
 \end_layout
 
 \begin_layout Standard
@@ -1155,7 +1223,7 @@ else:
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 5 (moderado)
+Caso 7 (python) (moderado)
 \end_layout
 
 \begin_layout Standard
@@ -1213,7 +1281,7 @@ s.saludar(nombre)
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 6 (fácil)
+Caso 8 (python) (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -1261,7 +1329,7 @@ my_function("Brazil")
 \end_layout
 
 \begin_layout Subsection
-Ejemplo 7 (moderado): punteros en C
+Caso 9 (C) (moderado)
 \end_layout
 
 \begin_layout Standard
