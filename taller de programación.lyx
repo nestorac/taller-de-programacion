@@ -1,0 +1,1439 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\headheight 1.5cm
+\headsep 1.5cm
+\footskip 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "language=Python,keywordstyle={\color{blue}},commentstyle={\color{magenta}\itshape},emphstyle={\color{red}},breaklines=true,basicstyle={\ttfamily},stringstyle={\color{green}},identifierstyle={\color{cyan}}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Taller de programación en Reciclanet
+\end_layout
+
+\begin_layout Author
+Néstor Amigo Cairo <nestorac@gmail.com>
+\end_layout
+
+\begin_layout Date
+marzo 2021
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Preliminares
+\end_layout
+
+\begin_layout Chapter
+Metodología
+\end_layout
+
+\begin_layout Itemize
+Se aprende leyendo código
+\end_layout
+
+\begin_layout Itemize
+No se trata un lenguaje específico
+\end_layout
+
+\begin_layout Itemize
+Se tiene siempre presente el enfoque problema-solución para no irnos por
+ las ramas
+\end_layout
+
+\begin_layout Itemize
+Se usa una presentación LibreOffice Impress y este documento, ambos relacionados
+\end_layout
+
+\begin_layout Chapter
+El caso del software libre
+\end_layout
+
+\begin_layout Section
+Herramientas
+\end_layout
+
+\begin_layout Itemize
+Lenguajes más usados: C, C++, python, BASH...
+\end_layout
+
+\begin_layout Itemize
+Librerías: Gtk+/Gnome, Qt5/KDE...
+\end_layout
+
+\begin_layout Itemize
+Compiladores: GNU C/C++, Java, intérprete python...
+\end_layout
+
+\begin_layout Itemize
+Control de versiones: BZR, git, svn...
+\end_layout
+
+\begin_layout Section
+Consejos
+\end_layout
+
+\begin_layout Itemize
+Explorar primero todas las herramientas que existan para desarrollar nuestra
+ app.
+ Generalmente, las librerías que se usan a menudo están más fácilmente disponibl
+es en todas las distribuciones y están mejor documentadas, pero una herramienta
+ muy específica nos puede ayudar, según el caso, vale la pena estudiarlo,
+ lo fundamental es evitar reinventar la rueda.
+\end_layout
+
+\begin_layout Itemize
+El desarrollador es algo chovinista, tiende a pensar que simplemente porque
+ ve los errores del código ajeno será capaz de producir algo mejor, y no
+ suele ser así, siempre que podamos debemos evitar reinventar la rueda.
+\end_layout
+
+\begin_layout Itemize
+Los proyectos de software libre son complejos, una guía para aprender a
+ dirigir uno es 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Paradigmas de programación
+\end_layout
+
+\begin_layout Section
+Programación procedimental
+\end_layout
+
+\begin_layout Section
+Programación orientada a objetos
+\end_layout
+
+\begin_layout Chapter
+Leer código
+\end_layout
+
+\begin_layout Section
+Ejemplo 1: 
+\begin_inset Quotes eld
+\end_inset
+
+Hola, mundo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Lo básico
+\end_layout
+
+\begin_layout Subsection
+En python 3
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print('Hola, mundo.')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import __hello__
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> hm="Hola, mundo."
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> hm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Bash
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Hola, mundo."
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("¡Hola, mundo!
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <iostream>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+using namespace std;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	cout << "¡Hola, mundo!" << std::endl;
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Java
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+        javax.swing.JOptionPane.showMessageDialog(null,"Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En PHP
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php echo '¡Hola mundo!'; ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ <?php print("¡Hola, mundo!"); ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php
+\end_layout
+
+\begin_layout Plain Layout
+
+	//Ejemplo "Hola, mundo" PHP + JS (Servidor -> Cliente)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$txt = "Hola, mundo";
+\end_layout
+
+\begin_layout Plain Layout
+
+	echo "<script> alert('$txt'); </script>";
+\end_layout
+
+\begin_layout Plain Layout
+
+?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Brainfuck
+\end_layout
+
+\begin_layout Standard
+Brainfuck es un lenguaje llevado al extremo con un compilador muy sencillo,
+ diseñado por Urban Müller en 1993.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.++
++.------.--------.>+.>.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejemplo 2: El kernel panic de Linux v0.1 (1991)
+\end_layout
+
+\begin_layout Standard
+El kernel en su versión inicial, la 0.1, contiene alrdedor de 7.000 líneas
+ de código C, unas mil de ensamblador, y pesa unos 70KB comprimido en tar.gz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/*
+\end_layout
+
+\begin_layout Plain Layout
+
+ * This function is used through-out the kernel (includeinh mm and fs)
+\end_layout
+
+\begin_layout Plain Layout
+
+ * to indicate a major problem.
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <linux/kernel.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+volatile void panic(const char * s)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printk("Kernel panic: %s
+\backslash
+n
+\backslash
+r",s);
+\end_layout
+
+\begin_layout Plain Layout
+
+	for(;;);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Claves
+\end_layout
+
+\begin_layout Itemize
+Función volátil
+\end_layout
+
+\begin_layout Itemize
+Bucle infinito
+\end_layout
+
+\begin_layout Chapter
+Desarollo de juegos e IA
+\end_layout
+
+\begin_layout Standard
+Este capítulo es muy personal, resulta divertido diseñar juegos sencillos
+ con Inteligencia Artificial básica.
+\end_layout
+
+\begin_layout Section
+Godot
+\end_layout
+
+\begin_layout Chapter
+Actividades
+\end_layout
+
+\begin_layout Section
+Encuentra el fallo
+\end_layout
+
+\begin_layout Section
+Completa el código
+\end_layout
+
+\begin_layout Section
+Adivina qué sale
+\end_layout
+
+\begin_layout Section
+Averigua para qué sirve
+\end_layout
+
+\begin_layout Subsection
+Caso 1 (lenguaje: Python)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# To take the input from the user #num = float(input('Enter a number: '))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+num_sqrt = num ** 0.5 print('The [...] of %0.3f is %0.3f'%(num ,num_sqrt))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este ejemplo la clave está en el operador **.
+\end_layout
+
+\begin_layout Subsection
+Caso 2 (lenguaje: Python)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Program to check if a number [...] or not
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+num = 407
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# To take input from the user
+\end_layout
+
+\begin_layout Plain Layout
+
+#num = int(input("Enter a number: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# [...] are greater than 1
+\end_layout
+
+\begin_layout Plain Layout
+
+if num > 1:
+\end_layout
+
+\begin_layout Plain Layout
+
+   # check for [...]
+\end_layout
+
+\begin_layout Plain Layout
+
+   for i in range(2,num):
+\end_layout
+
+\begin_layout Plain Layout
+
+       if (num % i) == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+           print(num,"is not a [...]")
+\end_layout
+
+\begin_layout Plain Layout
+
+           print(i,"times",num//i,"is",num)
+\end_layout
+
+\begin_layout Plain Layout
+
+           break
+\end_layout
+
+\begin_layout Plain Layout
+
+   else:
+\end_layout
+
+\begin_layout Plain Layout
+
+       print(num,"is a [...]")
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\end_layout
+
+\begin_layout Plain Layout
+
+# if input number is less than
+\end_layout
+
+\begin_layout Plain Layout
+
+# or equal to 1, it is not [...]
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print(num,"is not a [...]")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este programa trae cola, ya que el problema que resuelve tiene una complejidad
+ elevada, y es la base de la criptografía moderna.
+\end_layout
+
+\begin_layout Section
+Leyendo código en Python
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 1 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = str("s1")
+\end_layout
+
+\begin_layout Plain Layout
+
+y = str(2)
+\end_layout
+
+\begin_layout Plain Layout
+
+z = str(3.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(z)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 2 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class MyClass:
+\end_layout
+
+\begin_layout Plain Layout
+
+  x = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(MyClass)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 3 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+num1 = 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+num2 = 6.3
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Add two numbers
+\end_layout
+
+\begin_layout Plain Layout
+
+sum = num1 + num2
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Display the sum
+\end_layout
+
+\begin_layout Plain Layout
+
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 4 (moderado)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# change the value for a different result
+\end_layout
+
+\begin_layout Plain Layout
+
+num = 7
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# To take input from the user
+\end_layout
+
+\begin_layout Plain Layout
+
+#num = int(input("Enter a number: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+factorial = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# check if the number is negative, positive or zero
+\end_layout
+
+\begin_layout Plain Layout
+
+if num < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("Sorry, factorial does not exist for negative numbers")
+\end_layout
+
+\begin_layout Plain Layout
+
+elif num == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("The factorial of 0 is 1")
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+   for i in range(1,num + 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+       factorial = factorial*i
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("The factorial of",num,"is",factorial)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 5 (moderado)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Definición de la clase saludo
+\end_layout
+
+\begin_layout Plain Layout
+
+class saludo:
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Definición del método saludar
+\end_layout
+
+\begin_layout Plain Layout
+
+    def saludar(self, nombre):
+\end_layout
+
+\begin_layout Plain Layout
+
+        print('Hola', nombre)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+nombre = input('Introduce tu nombre: ')
+\end_layout
+
+\begin_layout Plain Layout
+
+s = saludo()
+\end_layout
+
+\begin_layout Plain Layout
+
+s.saludar(nombre)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 6 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def my_function(country = "Norway"):
+\end_layout
+
+\begin_layout Plain Layout
+
+  print("I am from " + country)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("Sweden")
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("India")
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function()
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("Brazil")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ejemplo 7 (moderado): punteros en C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  int a=0; //Declaración de variable entera de tipo entero
+\end_layout
+
+\begin_layout Plain Layout
+
+  int *puntero; //Declaración de variable puntero de tipo entero
+\end_layout
+
+\begin_layout Plain Layout
+
+  puntero = &a; //Asignación de la dirección memoria de a
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  printf("El valor de a es: %d.
+ 
+\backslash
+nEl valor de *puntero es: %d.
+ 
+\backslash
+n",a,*puntero);
+\end_layout
+
+\begin_layout Plain Layout
+
+  printf("La dirección de memoria de *puntero es: %p",puntero);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problema a resolver 1
+\end_layout
+
+\begin_layout Standard
+Escribir un programa en Python que divida dos números que pide por pantalla
+ y muestre el resultado.
+\end_layout
+
+\begin_layout Chapter
+Lenguajes de programación más comunes
+\end_layout
+
+\begin_layout Section
+Características de cada lenguaje
+\end_layout
+
+\begin_layout Subsection
+C
+\end_layout
+
+\begin_layout Subsection
+C++
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsection
+Java
+\end_layout
+
+\begin_layout Subsection
+Bash
+\end_layout
+
+\begin_layout Section
+Diferencias entre ellos
+\end_layout
+
+\begin_layout Section
+Cómo elegir el lenguaje adecuado para un proyecto
+\end_layout
+
+\begin_layout Part
+Teoría
+\end_layout
+
+\begin_layout Standard
+Aunque con este método de aprendizaje la teoría pasa a segundo plano, es
+ cierto que es muy útil y necesaria en caso de duda.
+ Hay cientos de recursos con manuales de teoría de diversos lenguajes de
+ programación y enfoques metodológicos.
+ No voy a incluir en este taller la teoría, ya que sería repetir el magnífico
+ trabajo de sus autores.
+ [Mencionar libros y webs].
+\end_layout
+
+\begin_layout Chapter
+Complejidad algorítmica
+\end_layout
+
+\begin_layout Section
+Coste esperado, mejor y peor
+\end_layout
+
+\begin_layout Section
+Notación O
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "false"
+
+\end_inset
+
+Producir software de código abierto: producingoss.com/es/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+literal "false"
+
+\end_inset
+
+Código tomado de www.programiz.com
+\end_layout
+
+\end_body
+\end_document
