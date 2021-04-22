@@ -771,6 +771,72 @@ print(type(x));
 
 \end_layout
 
+\begin_layout Standard
+Caso 2 (python) (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print (
+\begin_inset Quotes fld
+\end_inset
+
+Adiós.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Buenas.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+ print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola otra vez.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Completa el código
 \end_layout
@@ -824,7 +890,7 @@ s.saludar(nombre)
 \end_layout
 
 \begin_layout Section
-Adivina qué sale
+Adivina el resultado
 \end_layout
 
 \begin_layout Section
@@ -1411,12 +1477,461 @@ n",a,*puntero);
 \end_layout
 
 \begin_layout Subsection
+Caso 10 (Bash) (fácil)
+\end_layout
+
+\begin_layout Standard
+Este programa hace uso de un 
+\shape italic
+while
+\shape default
+, 
+\begin_inset Quotes fld
+\end_inset
+
+mientras que
+\begin_inset Quotes frd
+\end_inset
+
+ se cumpla una condición haces algo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+valid=true
+\end_layout
+
+\begin_layout Plain Layout
+
+count=1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while [ $valid ]
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo $count
+\end_layout
+
+\begin_layout Plain Layout
+
+  if [ $count -eq 5 ];
+\end_layout
+
+\begin_layout Plain Layout
+
+  then
+\end_layout
+
+\begin_layout Plain Layout
+
+    break
+\end_layout
+
+\begin_layout Plain Layout
+
+  fi
+\end_layout
+
+\begin_layout Plain Layout
+
+  ((count++))
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 11 (Bash) (fácil)
+\end_layout
+
+\begin_layout Standard
+En este caso, analizamos el uso del bucle 
+\shape italic
+for
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+for (( counter=10; counter>0; counter-- ))
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+echo -n "$counter "
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\begin_layout Plain Layout
+
+printf "
+\backslash
+n"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 12 (Bash) (fácil)
+\end_layout
+
+\begin_layout Standard
+Creamos una función y luego la llamamos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+function F1()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo 'I like bash programming'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+F1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 13 (Bash) (fácil)
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a usar la entrada por teclado "STDIN" para ejecutar
+ un comando y enviar por la salida estandar "STDOUT" a un fichero de texto
+ el resultado.
+ Se aconseja ejecutar el comando 
+\shape italic
+ls -lsh
+\shape default
+ para guardar el resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Indique un comando a realizar: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$REPLY >> resultado.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 14 (Bash) (fácil)
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a usar la salida de errores "STDERR" haciendo fallar
+ un comando que entraremos por teclado y lo guardaremos en un fichero de
+ texto.
+ Se aconseja ejecutar un comando que no exista.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Indique un comando a realizar: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read 
+\end_layout
+
+\begin_layout Plain Layout
+
+$REPLY &>> error.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 15 (Bash) (fácil): Tuberías
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a hacer una tubería donde con el comando "top" y "grep"
+ que nos permite buscar dentro de un archivo, las líneas que coinciden con
+ un patron.
+ Allí buscaremos el proceso de nuestro terminal "konsole" y guarde los datos
+ en un fichero de resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+top | grep -e "konsole" >> resultado.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Caso 16 (Bash) (fácil): Entendiendo la salida y entrada de texto
+\end_layout
+
+\begin_layout Standard
+En este ejemplo, el comando 
+\shape italic
+cat
+\shape default
+ redirige el texto que tecleamos hacia el fichero 
+\shape italic
+texto.txt
+\shape default
+.
+ Para terminar, debemos pulsar 
+\series bold
+Ctrl+D
+\series default
+.
+ En este momento, es necesario aclarar cómo en UNIX todo se representa mediante
+ ficheros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+cat > texto.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Problema a resolver 1
 \end_layout
 
 \begin_layout Standard
 Escribir un programa en Python que divida dos números que pide por pantalla
  y muestre el resultado.
+\end_layout
+
+\begin_layout Subsection
+Problema a resolver 2
+\end_layout
+
+\begin_layout Standard
+Vamos a usar una IA básica en un juego hecho con Scratch.
+ Se trata de hacer un juego que sea lo más sencillo posible, divertido de
+ programar, y diseñar una IA muy básica pero capaz de plantear un reto.
+ Podría ser por ejemplo un Pong.
+\end_layout
+
+\begin_layout Chapter
+Estándares
+\end_layout
+
+\begin_layout Section
+Historia
+\end_layout
+
+\begin_layout Standard
+Mencionar aquí C/C++ 99, etc.
+ A continuación me centro en los últimos estándares de cada tema.
+\end_layout
+
+\begin_layout Section
+C
+\end_layout
+
+\begin_layout Subsection
+C17 (ISO/IEC 9899:2018)
+\end_layout
+
+\begin_layout Subsection
+C standard library
+\end_layout
+
+\begin_layout Section
+C++
+\end_layout
+
+\begin_layout Subsection
+C++20 (ISO/IEC 14882:2020)
+\end_layout
+
+\begin_layout Subsection
+C++ Standard Library
+\end_layout
+
+\begin_layout Section
+UNIX
+\end_layout
+
+\begin_layout Subsection
+IEEE POSIX
+\end_layout
+
+\begin_layout Section
+Linux Standard Base
 \end_layout
 
 \begin_layout Chapter
@@ -1470,6 +1985,22 @@ Aunque con este método de aprendizaje la teoría pasa a segundo plano, es
 \end_layout
 
 \begin_layout Chapter
+UNIX
+\end_layout
+
+\begin_layout Standard
+Todo son ficheros.
+\end_layout
+
+\begin_layout Chapter
+GNU
+\end_layout
+
+\begin_layout Chapter
+Linux
+\end_layout
+
+\begin_layout Chapter
 Complejidad algorítmica
 \end_layout
 
@@ -1479,6 +2010,30 @@ Coste esperado, mejor y peor
 
 \begin_layout Section
 Notación O
+\end_layout
+
+\begin_layout Chapter
+Herramientas
+\end_layout
+
+\begin_layout Itemize
+Godot 3
+\end_layout
+
+\begin_layout Itemize
+Scratch 3
+\end_layout
+
+\begin_layout Itemize
+GCC (C/C++)
+\end_layout
+
+\begin_layout Itemize
+Intérprete de Python 3
+\end_layout
+
+\begin_layout Itemize
+Java open
 \end_layout
 
 \begin_layout Bibliography
@@ -1501,6 +2056,27 @@ literal "false"
 \end_inset
 
 Código tomado de www.programiz.com
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Ejemplos tomados de linuxhint.com/30_bash_script_examples/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Ejemplos tomados de www.pcresumen.com/menu-software/33-scripting/bash/49-redirecci
+ones-en-bash
 \end_layout
 
 \end_body
