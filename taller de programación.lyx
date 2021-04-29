@@ -2804,7 +2804,7 @@ print(type(x));
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Caso 2 (python) (fácil)
 \end_layout
 
