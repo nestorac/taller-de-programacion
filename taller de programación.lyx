@@ -30,7 +30,16 @@
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry true
 \use_package amsmath 1
@@ -2735,6 +2744,22 @@ Bucle infinito
 \end_layout
 
 \begin_layout Chapter
+Depuración de fallos
+\end_layout
+
+\begin_layout Standard
+Técnicas de depuración de fallos.
+\end_layout
+
+\begin_layout Section
+El debugger
+\end_layout
+
+\begin_layout Section
+Las clases de prueba
+\end_layout
+
+\begin_layout Chapter
 Desarrollo de juegos e IA
 \end_layout
 
@@ -4066,6 +4091,134 @@ Proponer casos reales o ficticios de error, e investigar de dónde viene
 LatexCommand bibitem
 key "key-1"
 literal "false"
+
+\end_inset
+
+Libro: Programación shell.
+ Aprende a programar con más de 200 ejercicios resueltos.
+ Julio Gómez López.
+ Ed.
+ Ra-Ma.
+ 2012 (25€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Manual BASH oficial GNU (www.gnu.org/software/bash/manual/bash.html)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Inroducción a la programación informática.
+ Carol Vorderman.
+ Ed Dk.
+ 2019 (20€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+The pragmatic programmer.
+ David Thomas.
+ 2020 (epub/PDF gratis)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+Aprende a programar.
+ Max Wainewright.
+ 2015 (6€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+MOON.
+ Pablo Garaizar (18€ Bilbogames)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+La catedral y el bazar (catb.org/esr/writings/cathedral-bazaar/) Eric S Raymond
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+Hacker howto (catb.org/~esr/faqs/hacker-howto.html) Eric S Raymond
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+Clean code: A handbook of agile software craftmanship.
+ R.C.
+ Martin.
+ 2008 (40€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+Advanced programming in the unix environment 3rd Ed.
+ WR Stevens.
+ 2013 (ebook quitado el DRM de Amazon; si no, 67€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+[[Incluir aquí los libros de IA que tengo en casa]]
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
 
 \end_inset
 
