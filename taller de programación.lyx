@@ -132,8 +132,17 @@ No se trata un lenguaje específico
 \end_layout
 
 \begin_layout Itemize
-Se tiene siempre presente el enfoque problema-solución para no irnos por
+Se tiene siempre presente el enfoque problema-solución; no nos vamos por
  las ramas
+\end_layout
+
+\begin_layout Itemize
+La teoría es una herramienta para interpretar el código, no un fin en sí
+ misma
+\end_layout
+
+\begin_layout Itemize
+Aprendemos a analizar el problema y ofrecer soluciones óptimas
 \end_layout
 
 \begin_layout Itemize
@@ -2178,32 +2187,6 @@ nvme
  is a tool for manipulating NVM-Express disks.
 \end_layout
 
-\begin_layout Section
-Teoría
-\end_layout
-
-\begin_layout Subsection
-Introducción al lenguaje shell (Bash)
-\end_layout
-
-\begin_layout Standard
-Es un lenguaje de muy alto nivel, muy potente.
-\end_layout
-
-\begin_layout Subsection
-Problemas
-\end_layout
-
-\begin_layout Subsubsection
-Problema 1.
- Variables
-\end_layout
-
-\begin_layout Standard
-Problema 2.
- Entrada/salida
-\end_layout
-
 \begin_layout Chapter
 Paradigmas de programación
 \end_layout
@@ -2629,6 +2612,10 @@ status open
 \end_layout
 
 \begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
+\begin_layout Subsubsection
 En Brainfuck
 \end_layout
 
@@ -2743,7 +2730,27 @@ Función volátil
 Bucle infinito
 \end_layout
 
+\begin_layout Section
+Ejemplo 3: ...
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
 \begin_layout Chapter
+Técnicas de programación
+\end_layout
+
+\begin_layout Section
+Extreme progamming
+\end_layout
+
+\begin_layout Section
 Depuración de fallos
 \end_layout
 
@@ -2751,11 +2758,11 @@ Depuración de fallos
 Técnicas de depuración de fallos.
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 El debugger
 \end_layout
 
-\begin_layout Section
+\begin_layout Subsection
 Las clases de prueba
 \end_layout
 
@@ -2777,11 +2784,106 @@ Actividades
 \end_layout
 
 \begin_layout Section
+Casos prácticos de programación y gestión de sistemas.
+ Estrategias de resolución de problemas
+\end_layout
+
+\begin_layout Standard
+Para resolver problemas informáticos hay que valorar qué herramientas usar.
+ En GNU/Linux tenemos algunos lenguajes y librerías específicos, los más
+ básicos son:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+python Un lenguaje de alto nivel polivalente, muy usado hoy en día, especialment
+e en el mundo de la IA.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+C El lenguaje de programación más usado en el software libre.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+C++ Un lenguaje muy usado, orientado a objetos, compatible con C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+bash El intérprete de comandos más usado en GNU/Linux.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+anjuta El IDE favorito de Gnome/Gtk+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+QtDesigner Un IDE para Qt, lenguaje C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Kdevelop Un IDE para KDE, lenguaje C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gnome El escritorio más usado en GNU/Linux, favorito por estar sustentado
+ por una comunidad de desarrolladores.
+ Escrito en C.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gtk+ Las librerías gráficas más comunes, escritas en C, base de Gnome.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+KDE Un escritorio muy avanzado, basado en las librerías Qt, escrito en C++.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Qt Las librerías gráficas bajo KDE, mantenidas por Trolltech, escritas en
+ C++, menos usadas debido a que es menos independiente, al haber una empresa
+ detrás.
+ No obstante, están maravillosamente bien documentadas, y son muy potentes.
+\end_layout
+
+\begin_layout Subsection
+System Rescue CD
+\end_layout
+
+\begin_layout Subsection
+Solución de problemas de programación
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1.
+ Interfaz de borrado seguro
+\end_layout
+
+\begin_layout Standard
+Se trata de diseñar una interfaz de borrado seguro.
+ Hay que proponer ideas sobre cómo abordar la solución: lenguaje de programación
+, IDE, librerías, etc.
+\end_layout
+
+\begin_layout Section
 Diagnostica el fallo
 \end_layout
 
 \begin_layout Subsection
-Caso 1 (python) (fácil)
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -2804,8 +2906,8 @@ print(type(x));
 
 \end_layout
 
-\begin_layout Subsection
-Caso 2 (python) (fácil)
+\begin_layout Subsubsection
+Caso 2 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -2875,7 +2977,11 @@ Completa el código
 \end_layout
 
 \begin_layout Subsection
-Caso 1 (python) (fácil)
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -2931,7 +3037,11 @@ Interpreta el código
 \end_layout
 
 \begin_layout Subsection
-Caso 1 (Python)
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-3"
@@ -2970,8 +3080,8 @@ num_sqrt = num ** 0.5 print('The [...] of %0.3f is %0.3f'%(num ,num_sqrt))
 En este ejemplo la clave está en el operador **.
 \end_layout
 
-\begin_layout Subsection
-Caso 2 (Python)
+\begin_layout Subsubsection
+Caso 2
 \end_layout
 
 \begin_layout Standard
@@ -3096,8 +3206,8 @@ Este programa trae cola, ya que el problema que resuelve tiene una complejidad
  elevada, y es la base de la criptografía moderna.
 \end_layout
 
-\begin_layout Subsection
-Caso 3 (python) (fácil)
+\begin_layout Subsubsection
+Caso 3 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3140,8 +3250,8 @@ print(z)
 
 \end_layout
 
-\begin_layout Subsection
-Caso 4 (python) (fácil)
+\begin_layout Subsubsection
+Caso 4 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3173,8 +3283,8 @@ print(MyClass)
 
 \end_layout
 
-\begin_layout Subsection
-Caso 5 (python) (fácil)
+\begin_layout Subsubsection
+Caso 5 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3225,8 +3335,8 @@ print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
 
 \end_layout
 
-\begin_layout Subsection
-Caso 6 (python) (moderado)
+\begin_layout Subsubsection
+Caso 6 (moderado)
 \end_layout
 
 \begin_layout Standard
@@ -3321,8 +3431,8 @@ else:
 
 \end_layout
 
-\begin_layout Subsection
-Caso 7 (python) (moderado)
+\begin_layout Subsubsection
+Caso 7 (moderado)
 \end_layout
 
 \begin_layout Standard
@@ -3379,8 +3489,8 @@ s.saludar(nombre)
 
 \end_layout
 
-\begin_layout Subsection
-Caso 8 (python) (fácil)
+\begin_layout Subsubsection
+Caso 8 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3428,7 +3538,11 @@ my_function("Brazil")
 \end_layout
 
 \begin_layout Subsection
-Caso 9 (C) (moderado)
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (moderado)
 \end_layout
 
 \begin_layout Standard
@@ -3510,7 +3624,11 @@ n",a,*puntero);
 \end_layout
 
 \begin_layout Subsection
-Caso 10 (Bash) (fácil)
+Bash
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3607,8 +3725,8 @@ done
 
 \end_layout
 
-\begin_layout Subsection
-Caso 11 (Bash) (fácil)
+\begin_layout Subsubsection
+Caso 2 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3661,8 +3779,8 @@ n"
 
 \end_layout
 
-\begin_layout Subsection
-Caso 12 (Bash) (fácil)
+\begin_layout Subsubsection
+Caso 3 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3717,8 +3835,8 @@ F1
 
 \end_layout
 
-\begin_layout Subsection
-Caso 13 (Bash) (fácil)
+\begin_layout Subsubsection
+Caso 4 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3770,8 +3888,8 @@ $REPLY >> resultado.txt
 
 \end_layout
 
-\begin_layout Subsection
-Caso 14 (Bash) (fácil)
+\begin_layout Subsubsection
+Caso 5 (fácil)
 \end_layout
 
 \begin_layout Standard
@@ -3815,8 +3933,8 @@ $REPLY &>> error.txt
 
 \end_layout
 
-\begin_layout Subsection
-Caso 15 (Bash) (fácil): Tuberías
+\begin_layout Subsubsection
+Caso 6 (fácil): tuberías
 \end_layout
 
 \begin_layout Standard
@@ -3851,8 +3969,8 @@ top | grep -e "konsole" >> resultado.txt
 
 \end_layout
 
-\begin_layout Subsection
-Caso 16 (Bash) (fácil): Entendiendo la salida y entrada de texto
+\begin_layout Subsubsection
+Caso 7 (fácil): entendiendo la salida y entrada de texto
 \end_layout
 
 \begin_layout Standard
@@ -3899,6 +4017,10 @@ cat > texto.txt
 \end_layout
 
 \begin_layout Subsection
+Problemas a resolver
+\end_layout
+
+\begin_layout Subsubsection
 Problema a resolver 1
 \end_layout
 
@@ -3907,7 +4029,7 @@ Escribir un programa en Python que divida dos números que pide por pantalla
  y muestre el resultado.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Problema a resolver 2
 \end_layout
 
@@ -3929,6 +4051,28 @@ Historia
 \begin_layout Standard
 Mencionar aquí C/C++ 99, etc.
  A continuación me centro en los últimos estándares de cada tema.
+\end_layout
+
+\begin_layout Section
+Entidades de certificación
+\end_layout
+
+\begin_layout Subsection
+ISO
+\end_layout
+
+\begin_layout Standard
+El estándar internacional ISO 9899, fue creado por ISO (Organización Internacion
+al de Normalización), con el objetivo de promover la portabilidad de los
+ programas en C en varios sistemas de procesamiento de datos.
+\end_layout
+
+\begin_layout Standard
+Los estándares ISO cuestan en torno a 180 euros la edición digital en PDF.
+\end_layout
+
+\begin_layout Standard
+[Intentar condensar los cambios de cada normativa]
 \end_layout
 
 \begin_layout Section
@@ -3963,8 +4107,57 @@ UNIX
 IEEE POSIX
 \end_layout
 
+\begin_layout Standard
+IEEE, con Richard Stallman, comenzó las especificaciones UNIX más conocidas.
+ No obstante, IEEE empezó a cobrar sumas considerables de dinero por las
+ especificaciones, por lo cual se formó The Open Group, que continuó la
+ labor del IEEE pero cobrando mucho menos.
+\end_layout
+
+\begin_layout Subsection
+Single Unix Specification
+\end_layout
+
+\begin_layout Standard
+La Single Unix Specification cumple el mismo propósito que POSIX, es decir,
+ definir un sistema UNIX.
+ The Open Group comenzó el trabajo, que luego ha sido continuado por Austin
+ Group.
+ La version vigente actualmente es la cuatro.
+\end_layout
+
 \begin_layout Section
-Linux Standard Base
+Linux Standard Base 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "refspecs.linuxfoundation.org/lsb.shtml"
+target "https://refspecs.linuxfoundation.org/lsb.shtml"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La Linux Standard Base ha sido definida por varias empresas dedicadas a
+ distribuir software libre bajo paquetes RPM, en lugar del DEB de Debian,
+ por lo cual ha sido criticada, aunque en general la comunidad agradece
+ la existencia de este estándar.
+\end_layout
+
+\begin_layout Standard
+Se define la funcionalidad propia del sistema y del escritorio en documentos
+ separados.
 \end_layout
 
 \begin_layout Chapter
