@@ -4,10 +4,10 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass article
+\textclass book
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language spanish
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -29,6 +29,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +45,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -61,7 +63,7 @@
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style english
+\quotes_style french
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -76,55 +78,78 @@
 \begin_body
 
 \begin_layout Quotation
-En este curso vamos a usar varios lenguajes de programación indistintamente.
+En este curso vamos a usar varios lenguajes de programación indistintamente,
+ es decir, este curso es independiente del lenguaje.
+ Es decir, cuando terminemos el curso seremos políglotas.
+\end_layout
+
+\begin_layout Quotation
+Todo tendrá un enfoque práctico, se trata de llevar la teoría a la práctica,
+ y ver cómo se comporta el lenguaje en el mundo real.
+ Se incluirán en casa apartado opiniones expertas que arrojen luz.
+ En su día leí un artículo muy bueno de un programador experto explicando
+ las limitaciones de la POO en el mundo real, y sus carencias.
+\end_layout
+
+\begin_layout Quotation
+Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
+ varios lenguajes.
+\end_layout
+
+\begin_layout Part
+Programación procedimental
+\end_layout
+
+\begin_layout Chapter
+Lenguajes de programación
 \end_layout
 
 \begin_layout Section
-LENGUAJES DE PROGRAMACIÓN
-\end_layout
-
-\begin_layout Subsection
 Definición de Lenguaje de Programación
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Definición de Programa
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Paradigmas de la Programación
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Programación Funcional y Estructurada
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Programación Orientada a Objetos
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Programación Lógica
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Programación Orientada a Datos
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Traductores
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Código fuente, objeto y ejecutable
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Entornos de desarrollo integrado
 \end_layout
 
+\begin_layout Chapter
+Elementos básicos de la programación estructurada
+\end_layout
+
 \begin_layout Section
-ELEMENTOS BÁSICOS DE LA PROGRAMACIÓN ESTRUCTURADA.
+Tipos de datos
 \end_layout
 
 \begin_layout Subsection
@@ -132,163 +157,244 @@ Tipos de datos primitivos
 \end_layout
 
 \begin_layout Subsection
+Tipos de datos estructurados
+\end_layout
+
+\begin_layout Section
 Palabras reservadas
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Variables
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Constantes
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Expresiones
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Jerarquía de operadores
 \end_layout
 
-\begin_layout Subsection
-Operadores aritméticos
+\begin_layout Section
+Operadores
 \end_layout
 
 \begin_layout Subsection
-Operadores relacionales
+O.
+ aritméticos
 \end_layout
 
 \begin_layout Subsection
-Operadores lógicos o booleanos
+O.
+ relacionales
+\end_layout
+
+\begin_layout Subsection
+O.
+ lógicos o booleanos
+\end_layout
+
+\begin_layout Subsection
+O.
+ unitarios
+\end_layout
+
+\begin_layout Subsection
+O.
+ a nivel de bits
+\end_layout
+
+\begin_layout Subsection
+O.
+ de asignación
+\end_layout
+
+\begin_layout Subsection
+O.
+ condicionales
+\end_layout
+
+\begin_layout Subsection
+Otros operadores
+\end_layout
+
+\begin_layout Chapter
+Entrada y salida del programa
+\end_layout
+
+\begin_layout Chapter
+Sentencias de control de flujo
 \end_layout
 
 \begin_layout Section
-CONTROL DE FLUJO DE SENTENCIAS
-\end_layout
-
-\begin_layout Subsection
 Sentencias incondicionales
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Sentencias condicionales
 \end_layout
 
-\begin_layout Section
-VARIABLE CON SUBINDICE O ARREGLOS
+\begin_layout Chapter
+Variable con subíndice o arreglos
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Definición
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Arreglos unidimensionales
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Arreglos bidimensionales
 \end_layout
 
-\begin_layout Section
-FUNCIONES
+\begin_layout Chapter
+Funciones
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Concepto de función en programación
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Llamada o invocación a una función
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Parámetros
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Valor de retorno
 \end_layout
 
-\begin_layout Section
-ELEMENTOS BÁSICOS DE LA PROGRAMACIÓN ORIENTADA A OBJETOS
+\begin_layout Part
+Programación Orientada a Objetos
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Chapter
+Elementos básicos de la Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Section
 Concepto de objeto
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Anatomía de un objeto
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Beneficios de la programación orientada a objetos
 \end_layout
 
-\begin_layout Section
-CLASES Y OBJETOS
+\begin_layout Chapter
+Clases y objetos
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Definición de una clase
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Miembros de una clase
 \end_layout
 
-\begin_layout Section
-ENCAPSULAMIENTO
+\begin_layout Chapter
+Encapsulamiento
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Modularidad
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Ocultamiento de la implementación
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Protección de variables y métodos
 \end_layout
 
-\begin_layout Section
-HERENCIA
+\begin_layout Chapter
+Herencia
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Jerarquía de clases
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Tipos herencia
 \end_layout
 
-\begin_layout Section
-INTERFAZ GRÁFICA
+\begin_layout Chapter
+Polimorfismo
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Part
+Más allá del lenguaje
+\end_layout
+
+\begin_layout Chapter
+Bibliotecas estándar
+\end_layout
+
+\begin_layout Chapter
+Algoritmos
+\end_layout
+
+\begin_layout Chapter
+Interfaz gráfica
+\end_layout
+
+\begin_layout Section
 Definición de GUI
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Formularios
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Contenedores
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Componentes
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Eventos
+\end_layout
+
+\begin_layout Standard
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Este índice ha sido extraído de 
+\begin_inset CommandInset href
+LatexCommand href
+name "Curso de programación, introducción"
+target "https://cursosenlinea.tic.unam.mx/sl/Temarios/Introduccion_a_la_programacion.html"
+literal "false"
+
+\end_inset
+
+ con sucesivas mejoras.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
