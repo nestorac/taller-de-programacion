@@ -96,6 +96,11 @@ Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
  varios lenguajes.
 \end_layout
 
+\begin_layout Quotation
+Se ofrece un enfoque orientado a la lectura de código para no reinventar
+ la rueda.
+\end_layout
+
 \begin_layout Part
 Programación procedimental
 \end_layout
