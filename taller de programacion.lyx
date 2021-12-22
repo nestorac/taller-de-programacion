@@ -121,6 +121,17 @@ Preliminares
 
 \begin_layout Chapter
 Qué es un programa
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Aqui por ejemplo se puede poner un codigo basico y explicar como funciona
+ el codigo.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
@@ -137,12 +148,22 @@ No se trata un lenguaje específico
 
 \begin_layout Itemize
 Se tiene siempre presente el enfoque problema-solución; no nos vamos por
- las ramas
+ las ramas 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Ensena una problema facil como 2+2 en idiomas diferentes para comparar
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 La teoría es una herramienta para interpretar el código, no un fin en sí
- misma
+ misma 
 \end_layout
 
 \begin_layout Itemize
@@ -217,10 +238,36 @@ literal "false"
 
 \begin_layout Chapter
 La shell
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Demasiado complicado para principio.
+ Intentar empezar de algo muy facil, como en python:
+\end_layout
+
+\begin_layout Plain Layout
+print ('hello world')
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Aprende a leer
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Un poco mas delante en curso.
+ En principio de curso se necesita conocer los trucos de la idioma o comandos.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
