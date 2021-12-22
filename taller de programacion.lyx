@@ -120,6 +120,10 @@ Preliminares
 \end_layout
 
 \begin_layout Chapter
+Qué es un programa
+\end_layout
+
+\begin_layout Chapter
 Metodología
 \end_layout
 
@@ -4171,11 +4175,11 @@ Convenciones
 \end_layout
 
 \begin_layout Chapter
-Lenguajes de programación más comunes
+Lenguajes de programación
 \end_layout
 
 \begin_layout Section
-Características de cada lenguaje
+Los lenguajes de programación más comunes
 \end_layout
 
 \begin_layout Subsection
@@ -4199,7 +4203,19 @@ Bash
 \end_layout
 
 \begin_layout Section
-Diferencias entre ellos
+Características de los lenguajes
+\end_layout
+
+\begin_layout Section
+Diferencias entre lenguajes
+\end_layout
+
+\begin_layout Section
+Lenguajes interpretados vs compilados
+\end_layout
+
+\begin_layout Section
+Máquina virtual
 \end_layout
 
 \begin_layout Section
@@ -4207,7 +4223,51 @@ Cómo elegir el lenguaje adecuado para un proyecto
 \end_layout
 
 \begin_layout Part
-Teoría
+Bases de teoría
+\end_layout
+
+\begin_layout Chapter
+Programación procedimental
+\end_layout
+
+\begin_layout Section
+Variables
+\end_layout
+
+\begin_layout Subsection
+Tipos de datos
+\end_layout
+
+\begin_layout Section
+Constantes
+\end_layout
+
+\begin_layout Section
+Operadores
+\end_layout
+
+\begin_layout Section
+Funciones
+\end_layout
+
+\begin_layout Section
+Procedimientos
+\end_layout
+
+\begin_layout Chapter
+Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Part
+Información interesante
+\end_layout
+
+\begin_layout Standard
+Historia de la programación
+\end_layout
+
+\begin_layout Part
+Herramientas avanzadas
 \end_layout
 
 \begin_layout Standard
