@@ -95,30 +95,6 @@
 
 \begin_body
 
-\begin_layout Quotation
-En este curso vamos a usar varios lenguajes de programación indistintamente,
- es decir, este curso es independiente del lenguaje.
- Es decir, cuando terminemos el curso seremos políglotas.
-\end_layout
-
-\begin_layout Quotation
-Todo tendrá un enfoque práctico, se trata de llevar la teoría a la práctica,
- y ver cómo se comporta el lenguaje en el mundo real.
- Se incluirán en casa apartado opiniones expertas que arrojen luz.
- En su día leí un artículo muy bueno de un programador experto explicando
- las limitaciones de la POO en el mundo real, y sus carencias.
-\end_layout
-
-\begin_layout Quotation
-Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
- varios lenguajes.
-\end_layout
-
-\begin_layout Quotation
-Se ofrece un enfoque orientado a la lectura de código para no reinventar
- la rueda.
-\end_layout
-
 \begin_layout Title
 Taller de programación en Reciclanet
 \end_layout
@@ -141,19 +117,7 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Part
-Nociones básicas
-\end_layout
-
-\begin_layout Chapter
-Historia de la programación
-\end_layout
-
-\begin_layout Chapter
-Cómo funciona un ordenador moderno
-\end_layout
-
-\begin_layout Standard
-CPU , RAM, cachés...
+Preliminares
 \end_layout
 
 \begin_layout Chapter
@@ -4216,46 +4180,6 @@ Lenguajes de programación
 \end_layout
 
 \begin_layout Section
-Traductores
-\end_layout
-
-\begin_layout Section
-Código fuente, objeto y ejecutable
-\end_layout
-
-\begin_layout Section
-Entornos de desarrollo integrado
-\end_layout
-
-\begin_layout Section
-Definición de Lenguaje de Programación
-\end_layout
-
-\begin_layout Section
-Definición de Programa
-\end_layout
-
-\begin_layout Section
-Paradigmas de la Programación
-\end_layout
-
-\begin_layout Subsection
-Programación Funcional y Estructurada
-\end_layout
-
-\begin_layout Subsection
-Programación Orientada a Objetos
-\end_layout
-
-\begin_layout Subsection
-Programación Lógica
-\end_layout
-
-\begin_layout Subsection
-Programación Orientada a Datos
-\end_layout
-
-\begin_layout Section
 Los lenguajes de programación más comunes
 \end_layout
 
@@ -4299,32 +4223,20 @@ Máquina virtual
 Cómo elegir el lenguaje adecuado para un proyecto
 \end_layout
 
+\begin_layout Part
+Bases de teoría
+\end_layout
+
 \begin_layout Chapter
-Bases de programación
-\end_layout
-
-\begin_layout Section
-Tipos de dato
-\end_layout
-
-\begin_layout Subsection
-Tipos de datos primitivos
-\end_layout
-
-\begin_layout Subsection
-Tipos de datos estructurados
-\end_layout
-
-\begin_layout Subsubsection
-Arreglos unidimensionales
-\end_layout
-
-\begin_layout Subsubsection
-Arreglos bidimensionales
+Programación procedimental
 \end_layout
 
 \begin_layout Section
 Variables
+\end_layout
+
+\begin_layout Subsection
+Tipos de datos
 \end_layout
 
 \begin_layout Section
@@ -4332,206 +4244,27 @@ Constantes
 \end_layout
 
 \begin_layout Section
-Punteros
-\end_layout
-
-\begin_layout Section
-Palabras reservadas
-\end_layout
-
-\begin_layout Section
-Expresiones
-\end_layout
-
-\begin_layout Section
-Jerarquía de operadores
-\end_layout
-
-\begin_layout Section
 Operadores
 \end_layout
 
-\begin_layout Subsection
-O.
- aritméticos
-\end_layout
-
-\begin_layout Subsection
-O.
- relacionales
-\end_layout
-
-\begin_layout Subsection
-O.
- lógicos o booleanos
-\end_layout
-
-\begin_layout Subsection
-O.
- unitarios
-\end_layout
-
-\begin_layout Subsection
-O.
- a nivel de bits
-\end_layout
-
-\begin_layout Subsection
-O.
- de asignación
-\end_layout
-
-\begin_layout Subsection
-O.
- condicionales
-\end_layout
-
-\begin_layout Subsection
-Otros operadores
-\end_layout
-
-\begin_layout Part
-Programación procedimental
-\end_layout
-
-\begin_layout Chapter
-Entrada y salida del programa
-\end_layout
-
-\begin_layout Chapter
-Sentencias de control de flujo
-\end_layout
-
 \begin_layout Section
-Sentencias incondicionales
-\end_layout
-
-\begin_layout Section
-Sentencias condicionales
-\end_layout
-
-\begin_layout Chapter
 Funciones
 \end_layout
 
 \begin_layout Section
-Concepto de función en programación
+Procedimientos
 \end_layout
 
-\begin_layout Section
-Llamada o invocación a una función
-\end_layout
-
-\begin_layout Section
-Parámetros
-\end_layout
-
-\begin_layout Section
-Valor de retorno
-\end_layout
-
-\begin_layout Part
+\begin_layout Chapter
 Programación Orientada a Objetos
 \end_layout
 
-\begin_layout Chapter
-Elementos básicos de la Programación Orientada a Objetos
-\end_layout
-
-\begin_layout Section
-Concepto de objeto
-\end_layout
-
-\begin_layout Section
-Anatomía de un objeto
-\end_layout
-
-\begin_layout Section
-Beneficios de la programación orientada a objetos
-\end_layout
-
-\begin_layout Section
-Pensando en objetos
-\end_layout
-
-\begin_layout Chapter
-Clases y objetos
-\end_layout
-
-\begin_layout Section
-Definición de una clase
-\end_layout
-
-\begin_layout Section
-Miembros de una clase
-\end_layout
-
-\begin_layout Chapter
-Encapsulamiento
-\end_layout
-
-\begin_layout Section
-Modularidad
-\end_layout
-
-\begin_layout Section
-Ocultamiento de la implementación
-\end_layout
-
-\begin_layout Section
-Protección de variables y métodos
-\end_layout
-
-\begin_layout Chapter
-Herencia
-\end_layout
-
-\begin_layout Section
-Jerarquía de clases
-\end_layout
-
-\begin_layout Section
-Tipos herencia
-\end_layout
-
-\begin_layout Chapter
-Polimorfismo
-\end_layout
-
 \begin_layout Part
-Más allá del lenguaje
+Información interesante
 \end_layout
 
-\begin_layout Chapter
-Bibliotecas estándar
-\end_layout
-
-\begin_layout Chapter
-Algoritmos
-\end_layout
-
-\begin_layout Chapter
-Interfaz gráfica
-\end_layout
-
-\begin_layout Section
-Definición de GUI
-\end_layout
-
-\begin_layout Section
-Formularios
-\end_layout
-
-\begin_layout Section
-Contenedores
-\end_layout
-
-\begin_layout Section
-Componentes
-\end_layout
-
-\begin_layout Section
-Eventos
+\begin_layout Standard
+Historia de la programación
 \end_layout
 
 \begin_layout Part
@@ -4622,25 +4355,6 @@ Proponer casos reales o ficticios de error, e investigar de dónde viene
 LatexCommand bibitem
 key "key-1"
 literal "false"
-
-\end_inset
-
-Este índice ha sido extraído de 
-\begin_inset CommandInset href
-LatexCommand href
-name "Curso de programación, introducción"
-target "https://cursosenlinea.tic.unam.mx/sl/Temarios/Introduccion_a_la_programacion.html"
-literal "false"
-
-\end_inset
-
- con sucesivas mejoras.
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "key-1"
 
 \end_inset
 
