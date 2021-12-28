@@ -1,0 +1,4556 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 1.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\headheight 1.5cm
+\headsep 1.5cm
+\footskip 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\listings_params "language=Python,keywordstyle={\color{blue}},commentstyle={\color{magenta}\itshape},emphstyle={\color{red}},breaklines=true,basicstyle={\ttfamily},stringstyle={\color{green}},identifierstyle={\color{cyan}}"
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Taller de programación en Reciclanet
+\end_layout
+
+\begin_layout Author
+Néstor Amigo Cairo <nestorac@gmail.com>
+\end_layout
+
+\begin_layout Date
+marzo 2021
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Preliminares
+\end_layout
+
+\begin_layout Chapter
+Qué es un programa
+\end_layout
+
+\begin_layout Chapter
+Metodología
+\end_layout
+
+\begin_layout Itemize
+Se aprende leyendo código
+\end_layout
+
+\begin_layout Itemize
+No se trata un lenguaje específico
+\end_layout
+
+\begin_layout Itemize
+Se tiene siempre presente el enfoque problema-solución; no nos vamos por
+ las ramas
+\end_layout
+
+\begin_layout Itemize
+La teoría es una herramienta para interpretar el código, no un fin en sí
+ misma
+\end_layout
+
+\begin_layout Itemize
+Aprendemos a analizar el problema y ofrecer soluciones óptimas
+\end_layout
+
+\begin_layout Itemize
+Vamos a lidiar con código espagueti, no tanto con trampas, porque en el
+ mundo real la calidad del código suele distar de ser perfecta, pero no
+ suele haber malas intenciones
+\end_layout
+
+\begin_layout Itemize
+Se usa una presentación LibreOffice Impress y este documento, ambos relacionados
+\end_layout
+
+\begin_layout Chapter
+El caso del software libre
+\end_layout
+
+\begin_layout Section
+Herramientas
+\end_layout
+
+\begin_layout Itemize
+Lenguajes más usados: C, C++, python, BASH...
+\end_layout
+
+\begin_layout Itemize
+Librerías: Gtk+/Gnome, Qt5/KDE...
+\end_layout
+
+\begin_layout Itemize
+Compiladores: GNU C/C++, Java, intérprete python...
+\end_layout
+
+\begin_layout Itemize
+Control de versiones: BZR, git, svn...
+\end_layout
+
+\begin_layout Section
+Consejos
+\end_layout
+
+\begin_layout Itemize
+Explorar primero todas las herramientas que existan para desarrollar nuestra
+ app.
+ Generalmente, las librerías que se usan a menudo están más fácilmente disponibl
+es en todas las distribuciones y están mejor documentadas, pero una herramienta
+ muy específica nos puede ayudar, según el caso, vale la pena estudiarlo,
+ lo fundamental es evitar reinventar la rueda.
+\end_layout
+
+\begin_layout Itemize
+El desarrollador es algo chovinista, tiende a pensar que simplemente porque
+ ve los errores del código ajeno será capaz de producir algo mejor, y no
+ suele ser así, siempre que podamos debemos evitar reinventar la rueda.
+\end_layout
+
+\begin_layout Itemize
+Los proyectos de software libre son complejos, una guía para aprender a
+ dirigir uno es 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+La shell
+\end_layout
+
+\begin_layout Section
+Aprende a leer
+\end_layout
+
+\begin_layout Subsection
+Razona cómo funciona
+\end_layout
+
+\begin_layout Subsubsection
+Jugando con el PATH
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/sh
+\end_layout
+
+\begin_layout Plain Layout
+
+# inpath - verify that a specified program is either valid as-is,
+\end_layout
+
+\begin_layout Plain Layout
+
+#   or can be found in the PATH directory list.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+in_path()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  # given a command and the PATH, try to find the command.
+ Returns
+\end_layout
+
+\begin_layout Plain Layout
+
+  # 0 if found and executable, 1 if not.
+ Note that this temporarily modifies 
+\end_layout
+
+\begin_layout Plain Layout
+
+  # the the IFS (input field seperator), but restores it upon completion.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  cmd=$1        path=$2         retval=1
+\end_layout
+
+\begin_layout Plain Layout
+
+  oldIFS=$IFS   IFS=":"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  for directory in $path
+\end_layout
+
+\begin_layout Plain Layout
+
+  do
+\end_layout
+
+\begin_layout Plain Layout
+
+    if [ -x $directory/$cmd ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+      retval=0      # if we're here, we found $cmd in $directory
+\end_layout
+
+\begin_layout Plain Layout
+
+    fi
+\end_layout
+
+\begin_layout Plain Layout
+
+  done
+\end_layout
+
+\begin_layout Plain Layout
+
+  IFS=$oldIFS
+\end_layout
+
+\begin_layout Plain Layout
+
+  return $retval
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+checkForCmdInPath()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  var=$1
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\end_layout
+
+\begin_layout Plain Layout
+
+  # The variable slicing notation in the following conditional 
+\end_layout
+
+\begin_layout Plain Layout
+
+  # needs some explanation: ${var#expr} returns everything after
+\end_layout
+
+\begin_layout Plain Layout
+
+  # the match for 'expr' in the variable value (if any), and
+\end_layout
+
+\begin_layout Plain Layout
+
+  # ${var%expr} returns everything that doesn't match (in this
+\end_layout
+
+\begin_layout Plain Layout
+
+  # case just the very first character.
+ You can also do this in
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Bash with ${var:0:1} and you could use cut too: cut -c1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  if [ "$var" != "" ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+    if [ "${var%${var#?}}" = "/" ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+      if [ ! -x $var ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+        return 1
+\end_layout
+
+\begin_layout Plain Layout
+
+      fi
+\end_layout
+
+\begin_layout Plain Layout
+
+    elif ! in_path $var $PATH ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+      return 2
+\end_layout
+
+\begin_layout Plain Layout
+
+    fi 
+\end_layout
+
+\begin_layout Plain Layout
+
+  fi
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if [ $# -ne 1 ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+ echo "Usage: $0 command" >&2 ; exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+checkForCmdInPath "$1"
+\end_layout
+
+\begin_layout Plain Layout
+
+case $? in
+\end_layout
+
+\begin_layout Plain Layout
+
+  0 ) echo "$1 found in PATH"			;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  1 ) echo "$1 not found or not executable"	;;
+\end_layout
+
+\begin_layout Plain Layout
+
+  2 ) echo "$1 not found in PATH"		;;
+\end_layout
+
+\begin_layout Plain Layout
+
+esac
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+exit 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Filtrar la entrada
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/sh
+\end_layout
+
+\begin_layout Plain Layout
+
+# validalAlphaNum - Ensures that input only consists of alphabetical
+\end_layout
+
+\begin_layout Plain Layout
+
+#              and numeric characters.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+validAlphaNum()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  # validate arg: returns 0 if all upper+lower+digits, 1 otherwise
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  # Remove all unacceptable chars
+\end_layout
+
+\begin_layout Plain Layout
+
+  compressed="$(echo $1 | sed -e 's/[^[:alnum:]]//g')"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  if [ "$compressed" != "$input" ] ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 1
+\end_layout
+
+\begin_layout Plain Layout
+
+  else
+\end_layout
+
+\begin_layout Plain Layout
+
+    return 0
+\end_layout
+
+\begin_layout Plain Layout
+
+  fi
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Sample usage of this function in a script
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo -n "Enter input: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read input
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if ! validAlphaNum "$input" ; then
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo "Your input must consist of only letters and numbers." >&2
+\end_layout
+
+\begin_layout Plain Layout
+
+  exit 1
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo "Input is valid."
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+exit 0
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rellena los huecos
+\end_layout
+
+\begin_layout Subsection
+Resuelve el problema
+\end_layout
+
+\begin_layout Subsection
+Comandos útiles
+\end_layout
+
+\begin_layout Subsubsection
+Comandos de ayuda
+\end_layout
+
+\begin_layout Description
+man Muestra el manual del comando que le indiquemos
+\end_layout
+
+\begin_layout Description
+info Provee información del comando indicado
+\end_layout
+
+\begin_layout Description
+help Da una ayuda de los comandos
+\end_layout
+
+\begin_layout Description
+whatis Da una breve descripción de los comandos
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para archivos y directorios
+\end_layout
+
+\begin_layout Description
+ls Lista los archivos y directorios
+\end_layout
+
+\begin_layout Description
+sort Ordena alfabéticamente una lista de archivos
+\end_layout
+
+\begin_layout Description
+cd Cambia de directorio
+\end_layout
+
+\begin_layout Description
+pwd Muestra la ruta al directorio actual
+\end_layout
+
+\begin_layout Description
+tree Muestra la estructura de directorios y archivos en forma gráfica
+\end_layout
+
+\begin_layout Description
+mkdir Crea un directorio
+\end_layout
+
+\begin_layout Description
+rmdir Borra directorios (los directorios deben estar vacíos).
+\end_layout
+
+\begin_layout Description
+rm -r Borra directorios (los directorios pueden no estar vacíos)
+\end_layout
+
+\begin_layout Description
+cp Copia archivos
+\end_layout
+
+\begin_layout Description
+rm Borra archivos
+\end_layout
+
+\begin_layout Description
+mv Mueve o renombra archivos y directorios
+\end_layout
+
+\begin_layout Description
+cat Muestra el contenido de uno o varios archivos
+\end_layout
+
+\begin_layout Description
+more Ve el contenido de los archivos página a página
+\end_layout
+
+\begin_layout Description
+less Ve el contenido de los archivos
+\end_layout
+
+\begin_layout Description
+split Dividir archivos
+\end_layout
+
+\begin_layout Description
+find Busca archivos
+\end_layout
+
+\begin_layout Description
+locate Localiza archivos según una lista generada
+\end_layout
+
+\begin_layout Description
+updatedb Actualiza la lista de los archivos existentes
+\end_layout
+
+\begin_layout Description
+whereis Muestra la ubicación de un archivo
+\end_layout
+
+\begin_layout Description
+file Muestra el tipo de archivo
+\end_layout
+
+\begin_layout Description
+whatis Muestra descripción del archivo
+\end_layout
+
+\begin_layout Description
+wc Muestra el total de líneas, palabras o caracteres en un archivo
+\end_layout
+
+\begin_layout Description
+grep Busca un texto en un archivo
+\end_layout
+
+\begin_layout Description
+head Muestra el inicio de un archivo
+\end_layout
+
+\begin_layout Description
+tail Muestra el final de un archivo
+\end_layout
+
+\begin_layout Description
+tailf Muestra el final de un archivo y lo que se añada en el instante (logs)
+\end_layout
+
+\begin_layout Description
+tr Reemplaza caracteres en un fichero de texto
+\end_layout
+
+\begin_layout Description
+sed Cambia una cadena de caracteres por otra
+\end_layout
+
+\begin_layout Description
+join Cruza la información de dos archivos y muestra las partes que se repiten
+\end_layout
+
+\begin_layout Description
+paste Toma la primera línea de cada archivo y las combina para formar una
+ línea de salida
+\end_layout
+
+\begin_layout Description
+uniq Elimina líneas repetidas adyacentes del archivo entrada cuando copia
+ al archivo salida
+\end_layout
+
+\begin_layout Description
+cut Sirve para seleccionar columnas de una tabla o campos de cada línea
+ de archivo
+\end_layout
+
+\begin_layout Description
+ln Crea enlaces a archivos o carpetas
+\end_layout
+
+\begin_layout Description
+diff Muestra las diferencias entre dos archivos
+\end_layout
+
+\begin_layout Description
+fuser Muestra que usuario tiene en uso o bloqueado un archivo o recurso
+\end_layout
+
+\begin_layout Description
+tar Empaqueta archivos
+\end_layout
+
+\begin_layout Description
+gzip Comprime archivos en formato .gz
+\end_layout
+
+\begin_layout Description
+gunzip Descomprime archivos en formato .gz
+\end_layout
+
+\begin_layout Description
+compress Comprime archivos Z
+\end_layout
+
+\begin_layout Description
+uncompress Descomprime archivos Z
+\end_layout
+
+\begin_layout Description
+chmod Cambia permisos de archivos y directorios
+\end_layout
+
+\begin_layout Description
+chown Cambia de propietario/usuario
+\end_layout
+
+\begin_layout Description
+chgrp Cambia de grupo
+\end_layout
+
+\begin_layout Description
+vi Abre el editor de texto vi
+\end_layout
+
+\begin_layout Description
+nano Abre el editor de texto nano
+\end_layout
+
+\begin_layout Description
+pico Edita un fichero de texto
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para la gestión de usuarios
+\end_layout
+
+\begin_layout Description
+adduser Agrega un nuevo usuario
+\end_layout
+
+\begin_layout Description
+useradd Agrega un nuevo usuario
+\end_layout
+
+\begin_layout Description
+userdel Borra un usuario
+\end_layout
+
+\begin_layout Description
+passwd Permite cambiar la contraseña
+\end_layout
+
+\begin_layout Description
+su Cambia de usuario
+\end_layout
+
+\begin_layout Description
+whoami Muestra el nombre de usuario actual
+\end_layout
+
+\begin_layout Description
+logname Muestra el nombre de usuario
+\end_layout
+
+\begin_layout Description
+id Muestra datos de identificación del usuario
+\end_layout
+
+\begin_layout Description
+finger Da información de usuario
+\end_layout
+
+\begin_layout Description
+chfn Cambia la información propocionada por el comando finger
+\end_layout
+
+\begin_layout Description
+who Muestra los usuarios actuales del sistema
+\end_layout
+
+\begin_layout Description
+w Muestra detalles de los usuarios actuales aplicado al comando who
+\end_layout
+
+\begin_layout Description
+last Información de los últimos usuarios que han usado el sistema
+\end_layout
+
+\begin_layout Description
+mail Abre la aplicación de correo electrónico
+\end_layout
+
+\begin_layout Description
+pine Lector de correo en modo texto
+\end_layout
+
+\begin_layout Description
+write Manda un mensaje a la pantalla de un usuario
+\end_layout
+
+\begin_layout Description
+mesg Activa o desactiva la función de recepción de mensajes
+\end_layout
+
+\begin_layout Description
+wall Envía mensaje a todos los usuarios
+\end_layout
+
+\begin_layout Description
+talk Establecer una conversación/diálogo con otro usuario
+\end_layout
+
+\begin_layout Description
+banner Saca un diálogo/letrero en la pantalla
+\end_layout
+
+\begin_layout Description
+set Proporciona información sobre el entorno del usuario
+\end_layout
+
+\begin_layout Description
+addgroup Agrega un nuevo grupo
+\end_layout
+
+\begin_layout Description
+groupadd Agrega un nuevo grupo
+\end_layout
+
+\begin_layout Description
+chown Cambia el propietario de un fichero
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para la gestión de procesos
+\end_layout
+
+\begin_layout Description
+top Muestra los procesos que se están ejecutando y permite matarlos
+\end_layout
+
+\begin_layout Description
+ps Muestra la lista de procesos del usuario
+\end_layout
+
+\begin_layout Description
+ps aux Muestra la lista de procesos de la máquina
+\end_layout
+
+\begin_layout Description
+kill Envía un evento concreto a un proceso
+\end_layout
+
+\begin_layout Description
+killall Mata un proceso por su nombre
+\end_layout
+
+\begin_layout Description
+time Mide el tiempo que tarda un proceso en ejecutarse
+\end_layout
+
+\begin_layout Description
+fg Trae a primer plano un proceso parado o en segundo plano
+\end_layout
+
+\begin_layout Description
+bg Pone un proceso en segundo plano
+\end_layout
+
+\begin_layout Description
+& Colocado al final de la línea de un comando,lo ejecuta en segundo plano
+\end_layout
+
+\begin_layout Description
+nice Ajusta la prioridad de un proceso de -20 a 19
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para la gestión de discos y dispositivos
+\end_layout
+
+\begin_layout Description
+mount Monta un disco/dispositivo
+\end_layout
+
+\begin_layout Description
+umount Desmonta un disco/dispositivo
+\end_layout
+
+\begin_layout Description
+df Muestra el espacio libre de los discos/dispositivos
+\end_layout
+
+\begin_layout Description
+du Muestra el espacio usado por el disco/dispositivo o un directorio
+\end_layout
+
+\begin_layout Description
+mkfs Formatea un disco/dispositivo
+\end_layout
+
+\begin_layout Description
+fsck Estado del disco/dispositivo
+\end_layout
+
+\begin_layout Description
+fdisk Abre la aplicación para la gestión de particiones
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para el acceso remoto
+\end_layout
+
+\begin_layout Description
+rdsktop Se conecta a otra máquina de forma remota (remote login)
+\end_layout
+
+\begin_layout Description
+ssh Se conecta a otra máquina de forma remota (remote shell)
+\end_layout
+
+\begin_layout Description
+ftp Se conecta a otra máquina por el protocolo FTP
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para apagado y reinicio del sistema
+\end_layout
+
+\begin_layout Description
+reboot Reinicia la máquina
+\end_layout
+
+\begin_layout Description
+halt Apaga el sistema
+\end_layout
+
+\begin_layout Description
+shutdown Apaga el sistema
+\end_layout
+
+\begin_layout Description
+init 0 Apaga la máquina
+\end_layout
+
+\begin_layout Description
+init 6 Reinicia la máquina
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para gestión del sistema
+\end_layout
+
+\begin_layout Description
+uptime Muestra el tiempo transcurrido de encendido de la máquina
+\end_layout
+
+\begin_layout Description
+exit Cerrar sesión actual
+\end_layout
+
+\begin_layout Description
+logout Salir del sistema
+\end_layout
+
+\begin_layout Description
+nohup Proporciona inmunidad frente a rupturas de comunicación y abandonos
+ en ejecución de comandos
+\end_layout
+
+\begin_layout Description
+dmesg Muestra mensajes del arranque de la máquina
+\end_layout
+
+\begin_layout Description
+history Muestra todos los comandos escritos por el usuario
+\end_layout
+
+\begin_layout Description
+uname Proporciona información del sistema operativo
+\end_layout
+
+\begin_layout Description
+tee Copia la entrada estándar a la salida estándar y a un archivo
+\end_layout
+
+\begin_layout Description
+host Muestra la dirección IP del servidor en una red local.
+ Ej: host malpelo.univalle.edu.co => 192.168.31.5
+\end_layout
+
+\begin_layout Description
+hostname Muestra el nombre del servidor
+\end_layout
+
+\begin_layout Description
+umask Muestra y permite cambiar la máscara de usuario
+\end_layout
+
+\begin_layout Description
+chroot Cambia la raíz para que root ejecute algo de forma particular
+\end_layout
+
+\begin_layout Description
+chsh Cambia el login shell
+\end_layout
+
+\begin_layout Description
+free Muestra el estado de la memoria
+\end_layout
+
+\begin_layout Description
+date Muestra la fecha y hora actual
+\end_layout
+
+\begin_layout Description
+cal Muestra el calendario
+\end_layout
+
+\begin_layout Description
+clear Borra las líneas de texto escritas en la pantalla/terminal
+\end_layout
+
+\begin_layout Description
+at Ejecuta un comando con un retardo de tiempo especificado
+\end_layout
+
+\begin_layout Description
+env Muestra las variables de entorno
+\end_layout
+
+\begin_layout Description
+export Permite el uso de variables por programas en todos los caminos del
+ usuario
+\end_layout
+
+\begin_layout Description
+modprobe Carga un módulo
+\end_layout
+
+\begin_layout Description
+startx Arranca/inicia el servidor X
+\end_layout
+
+\begin_layout Description
+xev Muestra los eventos de las teclas y el ratón
+\end_layout
+
+\begin_layout Description
+lspci Muestra los periféricos conectados al puente PCI
+\end_layout
+
+\begin_layout Description
+lsmod Muestra los módulos cargados en el sistema
+\end_layout
+
+\begin_layout Description
+echo Escribe un mensaje en la salida estándar
+\end_layout
+
+\begin_layout Description
+alias Crea un alias
+\end_layout
+
+\begin_layout Description
+unalias Borra un alias
+\end_layout
+
+\begin_layout Description
+bc Muestra la calculadora
+\end_layout
+
+\begin_layout Description
+mc Ejecuta Midnight Commander
+\end_layout
+
+\begin_layout Description
+xkill Mata una ventana gráfica
+\end_layout
+
+\begin_layout Description
+rpm Instala los paquetes RPM de RedHat
+\end_layout
+
+\begin_layout Description
+dpkg Instala los paquetes DEB de Debian
+\end_layout
+
+\begin_layout Description
+kernelcfg Manejo de los módulos cargados en el kernel
+\end_layout
+
+\begin_layout Description
+insmod Inserta módulos en el kernel
+\end_layout
+
+\begin_layout Description
+rmmod Elimina módulos del kernel
+\end_layout
+
+\begin_layout Description
+updatedb Actualiza la base de datos interna de archivos
+\end_layout
+
+\begin_layout Description
+sh Cambia al bash/shell
+\end_layout
+
+\begin_layout Description
+setxkbmap Realiza la función de la tecla AltGr (en modo X) 
+\end_layout
+
+\begin_layout Subsubsection
+Comandos de red
+\end_layout
+
+\begin_layout Description
+netstat Muestra estado de la red
+\end_layout
+
+\begin_layout Description
+ifconfig Muestra la configuración del dispositivo de red
+\end_layout
+
+\begin_layout Description
+iwconfig Muestra la configuración del dispositivo de red inalámbrico
+\end_layout
+
+\begin_layout Description
+nmap Escanea la red y muestra los puertos que se encuentran disponibles.
+ Ej: nmap malpelo.univalle.edu.co/~ahbarome/ => 80/tcp open http
+\end_layout
+
+\begin_layout Description
+ping Indica si hay respuesta por parte del servidor
+\end_layout
+
+\begin_layout Description
+nslookup Muestra la IP del servidor DNS conectado(Servidor predeterminado:
+ UnKnown Address: 192.168.1.1)
+\end_layout
+
+\begin_layout Description
+telnet Conexión a un equipo/máquina de forma remota
+\end_layout
+
+\begin_layout Description
+netconf Configuración de la red
+\end_layout
+
+\begin_layout Description
+ntop Muestra los procesos de la red
+\end_layout
+
+\begin_layout Description
+route -n Muestra la tabla de rutas de la conexión de red
+\end_layout
+
+\begin_layout Description
+installpkg Instalar en slackware
+\end_layout
+
+\begin_layout Subsubsection
+Comandos para gestión de impresoras
+\end_layout
+
+\begin_layout Description
+lpq Muestra las colas de impresión
+\end_layout
+
+\begin_layout Description
+lpc Estado de las impresoras
+\end_layout
+
+\begin_layout Description
+lprm Elimina un trabajo de la cola de impresión
+\end_layout
+
+\begin_layout Description
+printtool Configuración de la impresora
+\end_layout
+
+\begin_layout Description
+pr Imprime un archivo
+\end_layout
+
+\begin_layout Description
+jobs Muestra los trabajos que están en una cola de impresión
+\end_layout
+
+\begin_layout Subsubsection
+Combinación especial de teclas
+\end_layout
+
+\begin_layout Description
+ctrl+l Borra las líneas de texto de pantalla/terminal
+\end_layout
+
+\begin_layout Description
+ctrl+alt+F1 F2 Cambio de consola
+\end_layout
+
+\begin_layout Description
+ctrl+F1 F2 Cambio de escritorio
+\end_layout
+
+\begin_layout Description
+ctrl+z Suspensión de un proceso
+\end_layout
+
+\begin_layout Description
+ctrl+d Muestra el final de un archivo EOF
+\end_layout
+
+\begin_layout Description
+ctrl+c Termina/finaliza un proceso en ejecución
+\end_layout
+
+\begin_layout Description
+tab Completa nombres de carpetas o archivos
+\end_layout
+
+\begin_layout Description
+ctrl+backspace Cierra el modo X (sale del sistema X y regresa a la consola)
+\end_layout
+
+\begin_layout Subsubsection
+Símbolos
+\end_layout
+
+\begin_layout Description
+~ Apagar el equipo por otros medios (alt+126)
+\end_layout
+
+\begin_layout Description
+.
+ Ubicación en directorio actual
+\end_layout
+
+\begin_layout Description
+| Redirección de comandos.
+ Pipeline o tubería (alt+124)
+\end_layout
+
+\begin_layout Description
+> Redirige la salida estándar (stdout) de un comando (alt+62)
+\end_layout
+
+\begin_layout Description
+2> Redirige la salida estándar de errores (stderr) de un comando (alt+62)
+\end_layout
+
+\begin_layout Description
+< Redirige un comando (alt+60)
+\end_layout
+
+\begin_layout Description
+& Colocado al final de la línea de comando, lo ejecuta en segundo plano
+\end_layout
+
+\begin_layout Description
+&& orden_1 && orden_2 Ejecuta la orden_2 si la orden_1 termina correctamente
+ (OK)
+\end_layout
+
+\begin_layout Description
+|| orden_1 || orden_2 Ejecuta la orden_2 si la orden_1 no termina correctamente
+ (OK)
+\end_layout
+
+\begin_layout Section
+System Rescue CD.
+ System tools
+\end_layout
+
+\begin_layout Standard
+This page tells you more about the important programs which comes with this
+ system rescue distribution, and which tools can be used for common tasks.
+ Please use the man command in a terminal to get more details about these
+ programs.
+\end_layout
+
+\begin_layout Subsection
+Packages
+\end_layout
+
+\begin_layout Standard
+As SystemRescue is based on ArchLinux you can use the 
+\series bold
+pacman
+\series default
+ command to install additional packages using a command such as 
+\series bold
+pacman -Syu
+\series default
+ package.
+ Keep in mind it may require a lot of space in the writable layer (stored
+ in memory by default) to download and install these packages.
+ So it can fail if too many packages are required.
+ It is recommended to use a very recent SystemRescue version in order to
+ minimize the number of packages which need to be updated or installed if
+ you plan to install packages at run time.
+\end_layout
+
+\begin_layout Subsection
+Storage and disk partitioning
+\end_layout
+
+\begin_layout Itemize
+You can run 
+\series bold
+lsblk
+\series default
+ and 
+\series bold
+blkid
+\series default
+ in the terminal to identify block devices
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GParted
+\series default
+ is a graphical partition editor which displays, checks, resizes, copies,
+ moves, creates, formats, deletes, and modifies disk partitions.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GNU Parted
+\series default
+ can also be used to manipulate partitions and it can be run from the 
+\series bold
+parted
+\series default
+ command in the terminal.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GNU ddrescue
+\series default
+ can copy data from and to block devices just like the standard 
+\series bold
+dd
+\series default
+ program and it is optimized to deal with disks with bad blocks.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+fsarchiver
+\series default
+ and 
+\series bold
+partclone
+\series default
+ allows you to save and restore the contents of file systems to/from a compresse
+d archive file.
+ It needs to be run using the command line from the terminal.
+\end_layout
+
+\begin_layout Itemize
+You can use 
+\series bold
+fdisk
+\series default
+, 
+\series bold
+gdisk
+\series default
+ and 
+\series bold
+cfdisk
+\series default
+ to edit MBR and GPT partition tables from the terminal
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+sfdisk
+\series default
+ is a tool to save and restore partition tables to/from a file.
+\end_layout
+
+\begin_layout Itemize
+You can use 
+\series bold
+growpart
+\series default
+ in order to grow a partition so it uses all the space available on the
+ block storage.
+ You normally need this command after you have extended the disk of a virtual
+ machine and need to make the additional space usable.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+lvm
+\series default
+ package provide all tools required to access Linux logical volumes
+\end_layout
+
+\begin_layout Subsection
+Network tools
+\end_layout
+
+\begin_layout Itemize
+You can configure the network (Ethernet or wifi) very easily using the 
+\series bold
+Network-Manager
+\series default
+ icon located next to the clock at the bottom of the screen.
+\end_layout
+
+\begin_layout Itemize
+You can also configure the network using traditional Linux commands from
+ a terminal.
+ The following commands are available: 
+\series bold
+nmcli
+\series default
+, 
+\series bold
+ifconfig
+\series default
+, 
+\series bold
+ip
+\series default
+, 
+\series bold
+route
+\series default
+, 
+\series bold
+dhclient
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+You can use 
+\series bold
+tcpdump
+\series default
+ if you need to see network packets being transmitted.
+\end_layout
+
+\begin_layout Itemize
+Both 
+\series bold
+netcat
+\series default
+ and 
+\series bold
+udpcast
+\series default
+ allow to transfer data via network connections.
+\end_layout
+
+\begin_layout Itemize
+You can connect to VPNs using 
+\series bold
+OpenVPN
+\series default
+, 
+\series bold
+WireGuard
+\series default
+, and 
+\series bold
+openconnect
+\end_layout
+
+\begin_layout Subsection
+File system tools
+\end_layout
+
+\begin_layout Itemize
+Tools for the most common linux file systems are included and allow you
+ to create new file systems, or administrate these (check consistency, repair,
+ reisize, …).
+ You can use 
+\series bold
+e2fsprogs
+\series default
+, 
+\series bold
+xfsprogs
+\series default
+, 
+\series bold
+btrfs-progs
+\series default
+, …
+\end_layout
+
+\begin_layout Itemize
+You can use 
+\series bold
+ntfs-3g
+\series default
+ if you need to access NTFS file systems and 
+\series bold
+dosfstools
+\series default
+ if you need to work with FAT file systems.
+\end_layout
+
+\begin_layout Subsection
+Web Browsers and Internet
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Firefox
+\series default
+ is available via an icon in the taskbar if you need to search for additional
+ information from internet while you are using SystemRescue.
+\end_layout
+
+\begin_layout Itemize
+You can also use 
+\series bold
+elinks
+\series default
+ from a terminal if you prefer a text mode browser
+\end_layout
+
+\begin_layout Itemize
+Both 
+\series bold
+curl
+\series default
+ and 
+\series bold
+wget
+\series default
+ allow you to download files from the command line
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+lftp
+\series default
+ program can be run from a terminal if you need an FTP client
+\end_layout
+
+\begin_layout Subsection
+Remote control
+\end_layout
+
+\begin_layout Itemize
+You can run an 
+\series bold
+OpenSSH client
+\series default
+ by using the 
+\series bold
+ssh
+\series default
+ or 
+\series bold
+sftp
+\series default
+ commands from a terminal
+\end_layout
+
+\begin_layout Itemize
+You can also connect from another machine to the 
+\series bold
+OpenSSH server
+\series default
+ running on SystemRescue via the 
+\series bold
+sshd
+\series default
+ service.
+ You will need to set a root password and update firewall rules to be able
+ to connect.
+\end_layout
+
+\begin_layout Itemize
+You can run 
+\series bold
+Remmina
+\series default
+ from the menu if you need to connect to another machine via VNC or NX,
+ and you can run 
+\series bold
+rdekstop
+\series default
+ from a terminal in order to connect to remote Windows machines over RDP.
+\end_layout
+
+\begin_layout Itemize
+You can use 
+\series bold
+screen
+\series default
+, 
+\series bold
+minicom
+\series default
+ or 
+\series bold
+picocom
+\series default
+ in order to connect to a serial console.
+\end_layout
+
+\begin_layout Subsection
+Security
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+GnuPG
+\series default
+ is the most common command to perform encryption and decryption of files.
+ It can be executed via the 
+\series bold
+gpg
+\series default
+ command from a terminal.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+KeepassXC
+\series default
+ is a very good tool for securely storing your passwords in a file which
+ is encrypted using a master password.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+cryptsetup
+\series default
+ command is available if you need to access Linux encrypted disks.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+chntpw
+\series default
+ command can be used to reset Windows passwords by accessing the disk where
+ Windows is installed.
+\end_layout
+
+\begin_layout Subsection
+Recovery tools
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+testdisk
+\series default
+ is a popular disk recovery software.
+ It recovers lost partitions and repairs unbootable systems by repairing
+ boot sectors.
+ It can also be used to recover deleted files from FAT, NTFS and ext4 filesystem
+s.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+photorec
+\series default
+ is a data recovery software focused on lost files including video, photos,
+ documents and archives.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+whdd
+\series default
+ is another diagnostic and recovery tool for block devices
+\end_layout
+
+\begin_layout Subsection
+Secure deletion
+\end_layout
+
+\begin_layout Standard
+Both 
+\series bold
+wipe
+\series default
+, 
+\series bold
+nwipe
+\series default
+ and 
+\series bold
+shred
+\series default
+ are available if you need to securely delete data.
+ Be careful as these tools are destructive.
+\end_layout
+
+\begin_layout Subsection
+File managers
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Midnight Commander
+\series default
+ is a text based file manager that you can run from the terminal using the
+ mc command.
+ It is very convenient to manipulate files and folders.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Thunar
+\series default
+ is a graphical file manager provided as part of the XFCE environment.
+\end_layout
+
+\begin_layout Subsection
+Hardware information
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+lspci
+\series default
+ and 
+\series bold
+lsusb
+\series default
+ commands are useful to list PCI and USB devices connected your your system,
+ and they can display the exact hardware IDs of these devices that are used
+ to find the right drivers.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+lscpu
+\series default
+ command displays information about the CPU.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+hwinfo
+\series default
+ command can be run from the terminal and will display a detail report about
+ the hardware.
+\end_layout
+
+\begin_layout Subsection
+Hardware testing
+\end_layout
+
+\begin_layout Itemize
+You can run 
+\series bold
+memtest86
+\series default
+ from the boot menu if you are booting in BIOS/Legacy mode.
+ This is not available if you are booting in UEFI mode.
+\end_layout
+
+\begin_layout Itemize
+You can run the 
+\series bold
+memtester
+\series default
+ command in a terminal if you want to test your system memory.
+ This command runs from the Linux system and hence is available if you run
+ in UEFI mode.
+ Make sure you run the 64bit version if your computer has more than 4GB
+ of RAM so it can address all your memory.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+stress
+\series default
+ commmand can be used from a terminal in order to stress tests your system
+ (CPU, memory, I/O, disks)
+\end_layout
+
+\begin_layout Subsection
+Boot loader and UEFI
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+Grub
+\series default
+ bootloader programs can be used if you need to repair the boot loader of
+ your Linux distribution.
+\end_layout
+
+\begin_layout Itemize
+You will need 
+\series bold
+efibootmgr
+\series default
+ if you want to change the definitions or the order of the UEFI boot entries
+ on your computer.
+\end_layout
+
+\begin_layout Subsection
+Text editors
+\end_layout
+
+\begin_layout Itemize
+You can use graphical text editors such as 
+\series bold
+featherpad
+\series default
+ and 
+\series bold
+geany
+\end_layout
+
+\begin_layout Itemize
+You can use text editors such as 
+\series bold
+vim
+\series default
+, 
+\series bold
+nano
+\series default
+ and 
+\series bold
+joe
+\series default
+ from the terminal
+\end_layout
+
+\begin_layout Itemize
+If you need an hexadecimal editor then you can use either 
+\series bold
+ghex
+\series default
+ which has a graphical user interface or 
+\series bold
+hexedit
+\series default
+ from the terminal
+\end_layout
+
+\begin_layout Subsection
+Archival and file transfer
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+tar
+\series default
+ command is often used to create and extract unix file archives from the
+ command line.
+\end_layout
+
+\begin_layout Itemize
+The system comes with all the common compression programs such as 
+\series bold
+gzip
+\series default
+, 
+\series bold
+xz
+\series default
+, 
+\series bold
+zstd
+\series default
+, 
+\series bold
+lz4
+\series default
+, 
+\series bold
+bzip2
+\end_layout
+
+\begin_layout Itemize
+You can also use the 
+\series bold
+zip
+\series default
+ and 
+\series bold
+unzip
+\series default
+ commands for manipulate ZIP archives
+\end_layout
+
+\begin_layout Itemize
+Also 
+\series bold
+p7zip
+\series default
+ is available using the 
+\series bold
+7z
+\series default
+ command in the terminal if you need to work with 7zip files.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+rsync
+\series default
+ utility is very powerful for copying files either locally or remotely over
+ an SSH connection.
+ You can also use 
+\series bold
+grsync
+\series default
+ if you prefer a graphical interface.
+\end_layout
+
+\begin_layout Subsection
+CD/DVD utilities
+\end_layout
+
+\begin_layout Standard
+You can use CD/DVD command line utilities such as 
+\series bold
+growisofs
+\series default
+, 
+\series bold
+cdrecord
+\series default
+ and 
+\series bold
+mkisofs
+\series default
+ if you need to work with ISO images and need to burn CD/DVD medias from
+ the system.
+ Also 
+\series bold
+udftools
+\series default
+ are available to manipulate UDF filesystems.
+\end_layout
+
+\begin_layout Subsection
+Scripting languages
+\end_layout
+
+\begin_layout Standard
+You can use 
+\series bold
+bash
+\series default
+ for running scripts as well as 
+\series bold
+Perl
+\series default
+, 
+\series bold
+Python
+\series default
+ and 
+\series bold
+Ruby
+\series default
+ dynamic languages which are all available.
+\end_layout
+
+\begin_layout Subsection
+Miscellaneous
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+flashrom
+\series default
+ is an utility for reading, writing, erasing and verifying flash ROM chips
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+nvme
+\series default
+ is a tool for manipulating NVM-Express disks.
+\end_layout
+
+\begin_layout Chapter
+Paradigmas de programación
+\end_layout
+
+\begin_layout Section
+Programación procedimental
+\end_layout
+
+\begin_layout Section
+Programación orientada a objetos
+\end_layout
+
+\begin_layout Chapter
+Leer código
+\end_layout
+
+\begin_layout Section
+Ejemplo 1: 
+\begin_inset Quotes eld
+\end_inset
+
+Hola, mundo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Lo básico
+\end_layout
+
+\begin_layout Subsection
+En python 3
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print('Hola, mundo.')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import __hello__
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> hm="Hola, mundo."
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> hm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Bash
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Hola, mundo."
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("¡Hola, mundo!
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <iostream>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+using namespace std;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	cout << "¡Hola, mundo!" << std::endl;
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Java
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+        javax.swing.JOptionPane.showMessageDialog(null,"Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En PHP
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php echo '¡Hola mundo!'; ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ <?php print("¡Hola, mundo!"); ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php
+\end_layout
+
+\begin_layout Plain Layout
+
+	//Ejemplo "Hola, mundo" PHP + JS (Servidor -> Cliente)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$txt = "Hola, mundo";
+\end_layout
+
+\begin_layout Plain Layout
+
+	echo "<script> alert('$txt'); </script>";
+\end_layout
+
+\begin_layout Plain Layout
+
+?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
+\begin_layout Subsubsection
+En Brainfuck
+\end_layout
+
+\begin_layout Standard
+Brainfuck es un lenguaje llevado al extremo con un compilador muy sencillo,
+ diseñado por Urban Müller en 1993.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.++
++.------.--------.>+.>.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejemplo 2: El kernel panic de Linux v0.1 (1991)
+\end_layout
+
+\begin_layout Standard
+El kernel en su versión inicial, la 0.1, contiene alrdedor de 7.000 líneas
+ de código C, unas mil de ensamblador, y pesa unos 70KB comprimido en tar.gz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/*
+\end_layout
+
+\begin_layout Plain Layout
+
+ * This function is used through-out the kernel (includeinh mm and fs)
+\end_layout
+
+\begin_layout Plain Layout
+
+ * to indicate a major problem.
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <linux/kernel.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+volatile void panic(const char * s)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printk("Kernel panic: %s
+\backslash
+n
+\backslash
+r",s);
+\end_layout
+
+\begin_layout Plain Layout
+
+	for(;;);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Claves
+\end_layout
+
+\begin_layout Itemize
+Función volátil
+\end_layout
+
+\begin_layout Itemize
+Bucle infinito
+\end_layout
+
+\begin_layout Section
+Ejemplo 3: ...
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
+\begin_layout Chapter
+Técnicas de programación
+\end_layout
+
+\begin_layout Section
+Extreme progamming
+\end_layout
+
+\begin_layout Section
+Depuración de fallos
+\end_layout
+
+\begin_layout Standard
+Técnicas de depuración de fallos.
+\end_layout
+
+\begin_layout Subsection
+El debugger
+\end_layout
+
+\begin_layout Subsection
+Las clases de prueba
+\end_layout
+
+\begin_layout Chapter
+Desarrollo de juegos e IA
+\end_layout
+
+\begin_layout Standard
+Este capítulo es muy personal, resulta divertido diseñar juegos sencillos
+ con Inteligencia Artificial básica.
+\end_layout
+
+\begin_layout Section
+Godot
+\end_layout
+
+\begin_layout Chapter
+Actividades
+\end_layout
+
+\begin_layout Section
+Casos prácticos de programación y gestión de sistemas.
+ Estrategias de resolución de problemas
+\end_layout
+
+\begin_layout Standard
+Para resolver problemas informáticos hay que valorar qué herramientas usar.
+ En GNU/Linux tenemos algunos lenguajes y librerías específicos, los más
+ básicos son:
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+python Un lenguaje de alto nivel polivalente, muy usado hoy en día, especialment
+e en el mundo de la IA.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+C El lenguaje de programación más usado en el software libre.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+C++ Un lenguaje muy usado, orientado a objetos, compatible con C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+bash El intérprete de comandos más usado en GNU/Linux.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+anjuta El IDE favorito de Gnome/Gtk+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+QtDesigner Un IDE para Qt, lenguaje C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Kdevelop Un IDE para KDE, lenguaje C++
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gnome El escritorio más usado en GNU/Linux, favorito por estar sustentado
+ por una comunidad de desarrolladores.
+ Escrito en C.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Gtk+ Las librerías gráficas más comunes, escritas en C, base de Gnome.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+KDE Un escritorio muy avanzado, basado en las librerías Qt, escrito en C++.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Qt Las librerías gráficas bajo KDE, mantenidas por Trolltech, escritas en
+ C++, menos usadas debido a que es menos independiente, al haber una empresa
+ detrás.
+ No obstante, están maravillosamente bien documentadas, y son muy potentes.
+\end_layout
+
+\begin_layout Subsection
+System Rescue CD
+\end_layout
+
+\begin_layout Subsection
+Solución de problemas de programación
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1.
+ Interfaz de borrado seguro
+\end_layout
+
+\begin_layout Standard
+Se trata de diseñar una interfaz de borrado seguro.
+ Hay que proponer ideas sobre cómo abordar la solución: lenguaje de programación
+, IDE, librerías, etc.
+\end_layout
+
+\begin_layout Section
+Diagnostica el fallo
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+print(type(x));
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 2 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print (
+\begin_inset Quotes fld
+\end_inset
+
+Adiós.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(
+\begin_inset Quotes fld
+\end_inset
+
+Buenas.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+ print(
+\begin_inset Quotes fld
+\end_inset
+
+Hola otra vez.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Completa el código
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class saludo:
+\end_layout
+
+\begin_layout Plain Layout
+
+    def saludar(self, nombre):
+\end_layout
+
+\begin_layout Plain Layout
+
+        print('Hola', (1)____________)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+nombre = input('Introduce tu nombre: ')
+\end_layout
+
+\begin_layout Plain Layout
+
+s = (2)___________()
+\end_layout
+
+\begin_layout Plain Layout
+
+s.saludar(nombre)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Adivina el resultado
+\end_layout
+
+\begin_layout Section
+Interpreta el código
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# To take the input from the user #num = float(input('Enter a number: '))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+num_sqrt = num ** 0.5 print('The [...] of %0.3f is %0.3f'%(num ,num_sqrt))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este ejemplo la clave está en el operador **.
+\end_layout
+
+\begin_layout Subsubsection
+Caso 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Program to check if a number [...] or not
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+num = 407
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# To take input from the user
+\end_layout
+
+\begin_layout Plain Layout
+
+#num = int(input("Enter a number: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# [...] are greater than 1
+\end_layout
+
+\begin_layout Plain Layout
+
+if num > 1:
+\end_layout
+
+\begin_layout Plain Layout
+
+   # check for [...]
+\end_layout
+
+\begin_layout Plain Layout
+
+   for i in range(2,num):
+\end_layout
+
+\begin_layout Plain Layout
+
+       if (num % i) == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+           print(num,"is not a [...]")
+\end_layout
+
+\begin_layout Plain Layout
+
+           print(i,"times",num//i,"is",num)
+\end_layout
+
+\begin_layout Plain Layout
+
+           break
+\end_layout
+
+\begin_layout Plain Layout
+
+   else:
+\end_layout
+
+\begin_layout Plain Layout
+
+       print(num,"is a [...]")
+\end_layout
+
+\begin_layout Plain Layout
+
+       
+\end_layout
+
+\begin_layout Plain Layout
+
+# if input number is less than
+\end_layout
+
+\begin_layout Plain Layout
+
+# or equal to 1, it is not [...]
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print(num,"is not a [...]")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este programa trae cola, ya que el problema que resuelve tiene una complejidad
+ elevada, y es la base de la criptografía moderna.
+\end_layout
+
+\begin_layout Subsubsection
+Caso 3 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = str("s1")
+\end_layout
+
+\begin_layout Plain Layout
+
+y = str(2)
+\end_layout
+
+\begin_layout Plain Layout
+
+z = str(3.0)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(y)
+\end_layout
+
+\begin_layout Plain Layout
+
+print(z)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 4 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class MyClass:
+\end_layout
+
+\begin_layout Plain Layout
+
+  x = 5
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(MyClass)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 5 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+num1 = 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+num2 = 6.3
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Add two numbers
+\end_layout
+
+\begin_layout Plain Layout
+
+sum = num1 + num2
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# Display the sum
+\end_layout
+
+\begin_layout Plain Layout
+
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 6 (moderado)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# change the value for a different result
+\end_layout
+
+\begin_layout Plain Layout
+
+num = 7
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# To take input from the user
+\end_layout
+
+\begin_layout Plain Layout
+
+#num = int(input("Enter a number: "))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+factorial = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# check if the number is negative, positive or zero
+\end_layout
+
+\begin_layout Plain Layout
+
+if num < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("Sorry, factorial does not exist for negative numbers")
+\end_layout
+
+\begin_layout Plain Layout
+
+elif num == 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("The factorial of 0 is 1")
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+   for i in range(1,num + 1):
+\end_layout
+
+\begin_layout Plain Layout
+
+       factorial = factorial*i
+\end_layout
+
+\begin_layout Plain Layout
+
+   print("The factorial of",num,"is",factorial)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 7 (moderado)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# Definición de la clase saludo
+\end_layout
+
+\begin_layout Plain Layout
+
+class saludo:
+\end_layout
+
+\begin_layout Plain Layout
+
+    # Definición del método saludar
+\end_layout
+
+\begin_layout Plain Layout
+
+    def saludar(self, nombre):
+\end_layout
+
+\begin_layout Plain Layout
+
+        print('Hola', nombre)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+nombre = input('Introduce tu nombre: ')
+\end_layout
+
+\begin_layout Plain Layout
+
+s = saludo()
+\end_layout
+
+\begin_layout Plain Layout
+
+s.saludar(nombre)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 8 (fácil)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def my_function(country = "Norway"):
+\end_layout
+
+\begin_layout Plain Layout
+
+  print("I am from " + country)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("Sweden")
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("India")
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function()
+\end_layout
+
+\begin_layout Plain Layout
+
+my_function("Brazil")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (moderado)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  int a=0; //Declaración de variable entera de tipo entero
+\end_layout
+
+\begin_layout Plain Layout
+
+  int *puntero; //Declaración de variable puntero de tipo entero
+\end_layout
+
+\begin_layout Plain Layout
+
+  puntero = &a; //Asignación de la dirección memoria de a
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  printf("El valor de a es: %d.
+ 
+\backslash
+nEl valor de *puntero es: %d.
+ 
+\backslash
+n",a,*puntero);
+\end_layout
+
+\begin_layout Plain Layout
+
+  printf("La dirección de memoria de *puntero es: %p",puntero);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Bash
+\end_layout
+
+\begin_layout Subsubsection
+Caso 1 (fácil)
+\end_layout
+
+\begin_layout Standard
+Este programa hace uso de un 
+\shape italic
+while
+\shape default
+, 
+\begin_inset Quotes fld
+\end_inset
+
+mientras que
+\begin_inset Quotes frd
+\end_inset
+
+ se cumpla una condición haces algo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+valid=true
+\end_layout
+
+\begin_layout Plain Layout
+
+count=1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+while [ $valid ]
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo $count
+\end_layout
+
+\begin_layout Plain Layout
+
+  if [ $count -eq 5 ];
+\end_layout
+
+\begin_layout Plain Layout
+
+  then
+\end_layout
+
+\begin_layout Plain Layout
+
+    break
+\end_layout
+
+\begin_layout Plain Layout
+
+  fi
+\end_layout
+
+\begin_layout Plain Layout
+
+  ((count++))
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 2 (fácil)
+\end_layout
+
+\begin_layout Standard
+En este caso, analizamos el uso del bucle 
+\shape italic
+for
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+for (( counter=10; counter>0; counter-- ))
+\end_layout
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+echo -n "$counter "
+\end_layout
+
+\begin_layout Plain Layout
+
+done
+\end_layout
+
+\begin_layout Plain Layout
+
+printf "
+\backslash
+n"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 3 (fácil)
+\end_layout
+
+\begin_layout Standard
+Creamos una función y luego la llamamos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+function F1()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+  echo 'I like bash programming'
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+F1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 4 (fácil)
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a usar la entrada por teclado "STDIN" para ejecutar
+ un comando y enviar por la salida estandar "STDOUT" a un fichero de texto
+ el resultado.
+ Se aconseja ejecutar el comando 
+\shape italic
+ls -lsh
+\shape default
+ para guardar el resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Indique un comando a realizar: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$REPLY >> resultado.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 5 (fácil)
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a usar la salida de errores "STDERR" haciendo fallar
+ un comando que entraremos por teclado y lo guardaremos en un fichero de
+ texto.
+ Se aconseja ejecutar un comando que no exista.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Indique un comando a realizar: "
+\end_layout
+
+\begin_layout Plain Layout
+
+read 
+\end_layout
+
+\begin_layout Plain Layout
+
+$REPLY &>> error.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 6 (fácil): tuberías
+\end_layout
+
+\begin_layout Standard
+En este Script vamos a hacer una tubería donde con el comando "top" y "grep"
+ que nos permite buscar dentro de un archivo, las líneas que coinciden con
+ un patron.
+ Allí buscaremos el proceso de nuestro terminal "konsole" y guarde los datos
+ en un fichero de resultado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+top | grep -e "konsole" >> resultado.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Caso 7 (fácil): entendiendo la salida y entrada de texto
+\end_layout
+
+\begin_layout Standard
+En este ejemplo, el comando 
+\shape italic
+cat
+\shape default
+ redirige el texto que tecleamos hacia el fichero 
+\shape italic
+texto.txt
+\shape default
+.
+ Para terminar, debemos pulsar 
+\series bold
+Ctrl+D
+\series default
+.
+ En este momento, es necesario aclarar cómo en UNIX todo se representa mediante
+ ficheros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+cat > texto.txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problemas a resolver
+\end_layout
+
+\begin_layout Subsubsection
+Problema a resolver 1
+\end_layout
+
+\begin_layout Standard
+Escribir un programa en Python que divida dos números que pide por pantalla
+ y muestre el resultado.
+\end_layout
+
+\begin_layout Subsubsection
+Problema a resolver 2
+\end_layout
+
+\begin_layout Standard
+Vamos a usar una IA básica en un juego hecho con Scratch.
+ Se trata de hacer un juego que sea lo más sencillo posible, divertido de
+ programar, y diseñar una IA muy básica pero capaz de plantear un reto.
+ Podría ser por ejemplo un Pong.
+\end_layout
+
+\begin_layout Chapter
+Estándares
+\end_layout
+
+\begin_layout Section
+Historia
+\end_layout
+
+\begin_layout Standard
+Mencionar aquí C/C++ 99, etc.
+ A continuación me centro en los últimos estándares de cada tema.
+\end_layout
+
+\begin_layout Section
+Entidades de certificación
+\end_layout
+
+\begin_layout Subsection
+ISO
+\end_layout
+
+\begin_layout Standard
+El estándar internacional ISO 9899, fue creado por ISO (Organización Internacion
+al de Normalización), con el objetivo de promover la portabilidad de los
+ programas en C en varios sistemas de procesamiento de datos.
+\end_layout
+
+\begin_layout Standard
+Los estándares ISO cuestan en torno a 180 euros la edición digital en PDF.
+\end_layout
+
+\begin_layout Standard
+[Intentar condensar los cambios de cada normativa]
+\end_layout
+
+\begin_layout Section
+C
+\end_layout
+
+\begin_layout Subsection
+C17 (ISO/IEC 9899:2018)
+\end_layout
+
+\begin_layout Subsection
+C standard library
+\end_layout
+
+\begin_layout Section
+C++
+\end_layout
+
+\begin_layout Subsection
+C++20 (ISO/IEC 14882:2020)
+\end_layout
+
+\begin_layout Subsection
+C++ Standard Library
+\end_layout
+
+\begin_layout Section
+UNIX
+\end_layout
+
+\begin_layout Subsection
+IEEE POSIX
+\end_layout
+
+\begin_layout Standard
+IEEE, con Richard Stallman, comenzó las especificaciones UNIX más conocidas.
+ No obstante, IEEE empezó a cobrar sumas considerables de dinero por las
+ especificaciones, por lo cual se formó The Open Group, que continuó la
+ labor del IEEE pero cobrando mucho menos.
+\end_layout
+
+\begin_layout Subsection
+Single Unix Specification
+\end_layout
+
+\begin_layout Standard
+La Single Unix Specification cumple el mismo propósito que POSIX, es decir,
+ definir un sistema UNIX.
+ The Open Group comenzó el trabajo, que luego ha sido continuado por Austin
+ Group.
+ La version vigente actualmente es la cuatro.
+\end_layout
+
+\begin_layout Section
+Linux Standard Base 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "refspecs.linuxfoundation.org/lsb.shtml"
+target "https://refspecs.linuxfoundation.org/lsb.shtml"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La Linux Standard Base ha sido definida por varias empresas dedicadas a
+ distribuir software libre bajo paquetes RPM, en lugar del DEB de Debian,
+ por lo cual ha sido criticada, aunque en general la comunidad agradece
+ la existencia de este estándar.
+\end_layout
+
+\begin_layout Standard
+Se define la funcionalidad propia del sistema y del escritorio en documentos
+ separados.
+\end_layout
+
+\begin_layout Chapter
+Convenciones
+\end_layout
+
+\begin_layout Chapter
+Lenguajes de programación
+\end_layout
+
+\begin_layout Section
+Los lenguajes de programación más comunes
+\end_layout
+
+\begin_layout Subsection
+C
+\end_layout
+
+\begin_layout Subsection
+C++
+\end_layout
+
+\begin_layout Subsection
+Python
+\end_layout
+
+\begin_layout Subsection
+Java
+\end_layout
+
+\begin_layout Subsection
+Bash
+\end_layout
+
+\begin_layout Section
+Características de los lenguajes
+\end_layout
+
+\begin_layout Section
+Diferencias entre lenguajes
+\end_layout
+
+\begin_layout Section
+Lenguajes interpretados vs compilados
+\end_layout
+
+\begin_layout Section
+Máquina virtual
+\end_layout
+
+\begin_layout Section
+Cómo elegir el lenguaje adecuado para un proyecto
+\end_layout
+
+\begin_layout Part
+Bases de teoría
+\end_layout
+
+\begin_layout Chapter
+Programación procedimental
+\end_layout
+
+\begin_layout Section
+Variables
+\end_layout
+
+\begin_layout Subsection
+Tipos de datos
+\end_layout
+
+\begin_layout Section
+Constantes
+\end_layout
+
+\begin_layout Section
+Operadores
+\end_layout
+
+\begin_layout Section
+Funciones
+\end_layout
+
+\begin_layout Section
+Procedimientos
+\end_layout
+
+\begin_layout Chapter
+Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Part
+Información interesante
+\end_layout
+
+\begin_layout Standard
+Historia de la programación
+\end_layout
+
+\begin_layout Part
+Herramientas avanzadas
+\end_layout
+
+\begin_layout Standard
+Aunque con este método de aprendizaje la teoría pasa a segundo plano, es
+ cierto que es muy útil y necesaria en caso de duda.
+ Hay cientos de recursos con manuales de teoría de diversos lenguajes de
+ programación y enfoques metodológicos.
+ No voy a incluir en este taller la teoría, ya que sería repetir el magnífico
+ trabajo de sus autores.
+ [Mencionar libros y webs].
+\end_layout
+
+\begin_layout Chapter
+UNIX
+\end_layout
+
+\begin_layout Standard
+Todo son ficheros.
+\end_layout
+
+\begin_layout Chapter
+GNU
+\end_layout
+
+\begin_layout Chapter
+Linux
+\end_layout
+
+\begin_layout Chapter
+Complejidad algorítmica
+\end_layout
+
+\begin_layout Section
+Coste esperado, mejor y peor
+\end_layout
+
+\begin_layout Section
+Notación O
+\end_layout
+
+\begin_layout Chapter
+Herramientas
+\end_layout
+
+\begin_layout Itemize
+Godot 3
+\end_layout
+
+\begin_layout Itemize
+Scratch 3 (Scratux 1.4.1)
+\end_layout
+
+\begin_layout Itemize
+GCC (C/C++)
+\end_layout
+
+\begin_layout Itemize
+Intérprete de Python 3
+\end_layout
+
+\begin_layout Itemize
+Java open
+\end_layout
+
+\begin_layout Section
+Hardware
+\end_layout
+
+\begin_layout Standard
+Es necesario dar unas pinceladas de nociones sobre hardware informático.
+\end_layout
+
+\begin_layout Section
+Casos prácticos de diagnóstico
+\end_layout
+
+\begin_layout Standard
+Proponer casos reales o ficticios de error, e investigar de dónde viene
+ el fallo.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "false"
+
+\end_inset
+
+Libro: Programación shell.
+ Aprende a programar con más de 200 ejercicios resueltos.
+ Julio Gómez López.
+ Ed.
+ Ra-Ma.
+ 2012 (25€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Manual BASH oficial GNU (www.gnu.org/software/bash/manual/bash.html)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Inroducción a la programación informática.
+ Carol Vorderman.
+ Ed Dk.
+ 2019 (20€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+The pragmatic programmer.
+ David Thomas.
+ 2020 (epub/PDF gratis)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+Aprende a programar.
+ Max Wainewright.
+ 2015 (6€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+MOON.
+ Pablo Garaizar (18€ Bilbogames)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+La catedral y el bazar (catb.org/esr/writings/cathedral-bazaar/) Eric S Raymond
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+Hacker howto (catb.org/~esr/faqs/hacker-howto.html) Eric S Raymond
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+Clean code: A handbook of agile software craftmanship.
+ R.C.
+ Martin.
+ 2008 (40€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+Advanced programming in the unix environment 3rd Ed.
+ WR Stevens.
+ 2013 (ebook quitado el DRM de Amazon; si no, 67€)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-10"
+
+\end_inset
+
+[[Incluir aquí los libros de IA que tengo en casa]]
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Producir software de código abierto: producingoss.com/es/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+literal "false"
+
+\end_inset
+
+Código tomado de www.programiz.com
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Ejemplos tomados de linuxhint.com/30_bash_script_examples/
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Ejemplos tomados de www.pcresumen.com/menu-software/33-scripting/bash/49-redirecci
+ones-en-bash
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+Obtenido de la web de Scratux, repositorio PPA para Ubuntu 20.04: scratux.org/#dow
+nload
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Ejemplos obtenidos de github.com/epety/100-shell-script-examples
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Listado de programas de System Rescue CD sacado de su web: www.system-rescue.org/S
+ystem-tools/
+\end_layout
+
+\end_body
+\end_document
