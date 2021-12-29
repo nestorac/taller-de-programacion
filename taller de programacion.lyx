@@ -4465,6 +4465,26 @@ Definición de una clase
 Miembros de una clase
 \end_layout
 
+\begin_layout Section
+Sobrecarga
+\end_layout
+
+\begin_layout Subsection
+de operadores
+\end_layout
+
+\begin_layout Subsection
+de métodos
+\end_layout
+
+\begin_layout Section
+Iniciación de un objeto
+\end_layout
+
+\begin_layout Section
+Derivación de clases
+\end_layout
+
 \begin_layout Chapter
 Encapsulamiento
 \end_layout
@@ -4497,12 +4517,72 @@ Tipos herencia
 Polimorfismo
 \end_layout
 
+\begin_layout Chapter
+Programación genérica (plantillas)
+\end_layout
+
 \begin_layout Part
 Más allá del lenguaje
 \end_layout
 
 \begin_layout Chapter
+Flujos
+\end_layout
+
+\begin_layout Chapter
+Gestión de errores
+\end_layout
+
+\begin_layout Section
+Excepciones
+\end_layout
+
+\begin_layout Chapter
+Buenas prácticas
+\end_layout
+
+\begin_layout Section
+Cómo producir código limpio
+\end_layout
+
+\begin_layout Section
+Errores
+\end_layout
+
+\begin_layout Subsection
+Prevenir antes que curar
+\end_layout
+
+\begin_layout Subsection
+Diagnosticar para curar
+\end_layout
+
+\begin_layout Subsection
+Manejo de errores
+\end_layout
+
+\begin_layout Section
+Cómo trabajar en equipo
+\end_layout
+
+\begin_layout Subsection
+Sistemas de control de versiones
+\end_layout
+
+\begin_layout Chapter
 Bibliotecas estándar
+\end_layout
+
+\begin_layout Chapter
+Pruebas
+\end_layout
+
+\begin_layout Section
+Casos de prueba
+\end_layout
+
+\begin_layout Section
+Pruebas unitarias
 \end_layout
 
 \begin_layout Chapter
@@ -4545,6 +4625,26 @@ Aunque con este método de aprendizaje la teoría pasa a segundo plano, es
  No voy a incluir en este taller la teoría, ya que sería repetir el magnífico
  trabajo de sus autores.
  [Mencionar libros y webs].
+\end_layout
+
+\begin_layout Chapter
+Manejo de memoria
+\end_layout
+
+\begin_layout Section
+Recolección de basura
+\end_layout
+
+\begin_layout Chapter
+Programación concurrente
+\end_layout
+
+\begin_layout Section
+Razones por las que es importante hoy en día
+\end_layout
+
+\begin_layout Section
+Hilos
 \end_layout
 
 \begin_layout Chapter
@@ -4840,4 +4940,3 @@ ystem-tools/
 
 \end_body
 \end_document
-
