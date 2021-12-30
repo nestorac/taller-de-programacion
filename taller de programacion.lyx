@@ -114,8 +114,17 @@ Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
 \end_layout
 
 \begin_layout Quotation
-Se ofrece un enfoque orientado a la lectura de código para no reinventar
- la rueda.
+Se ofrece un 
+\series bold
+enfoque orientado a la lectura de código
+\series default
+ para no reinventar la rueda.
+\end_layout
+
+\begin_layout Quotation
+A lo largo del libro se van a mostrar fragmentos de código relevantes.
+ Vamos a dirigir nuestros esfuerzos hacia el desarrollo de herramientas
+ de IA para juegos de estrategia 2 y 3D.
 \end_layout
 
 \begin_layout Title
@@ -4287,11 +4296,13 @@ Diferencias entre lenguajes
 \end_layout
 
 \begin_layout Section
-Lenguajes interpretados vs compilados
+Lenguajes interpretados vs compilados y máquina virtual
 \end_layout
 
-\begin_layout Section
-Máquina virtual
+\begin_layout Standard
+La delgada línea que separa la interpretación y la complicación o la máquina
+ virtual.
+ Ejemplos: compilar Python, interpretar Java, etc.
 \end_layout
 
 \begin_layout Section
@@ -4308,6 +4319,26 @@ Tipos de dato
 
 \begin_layout Subsection
 Tipos de datos primitivos
+\end_layout
+
+\begin_layout Subsubsection
+Booleano
+\end_layout
+
+\begin_layout Subsubsection
+Entero
+\end_layout
+
+\begin_layout Subsubsection
+Coma flotante
+\end_layout
+
+\begin_layout Subsubsection
+Caracter
+\end_layout
+
+\begin_layout Subsubsection
+Puntero
 \end_layout
 
 \begin_layout Subsection
@@ -4441,6 +4472,197 @@ Elementos básicos de la Programación Orientada a Objetos
 Concepto de objeto
 \end_layout
 
+\begin_layout Standard
+Un objeto es una representación informática de un concepto.
+ ¿Por qué digo 
+\begin_inset Quotes fld
+\end_inset
+
+informática
+\begin_inset Quotes frd
+\end_inset
+
+? Porque lo que hacemos no es describirlo con un lenguaje humano, sino modelarlo
+ mediante valores y atributos, y no es lo mismo.
+ No decimos 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene ruedas grandes
+\begin_inset Quotes frd
+\end_inset
+
+, sino 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene 4 ruedas, cada una mide 40cm
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En informática no se describen objetos de la forma abstracta a la que estamos
+ acostumbrados, sino que se atribuyen valores a etiquetas: la etiqueta 
+\begin_inset Quotes fld
+\end_inset
+
+rueda
+\begin_inset Quotes frd
+\end_inset
+
+ tiene un valor de 
+\begin_inset Quotes fld
+\end_inset
+
+40
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//Ejemplo básico de objeto representado en una clase en C++
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Objeto {
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Java
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Objeto {
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Python
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Objeto:
+\end_layout
+
+\begin_layout Plain Layout
+
+	i=1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Shell
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Existe una manera de hacerlo en Shell, investigar más.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+https://stackoverflow.com/questions/36771080/creating-classes-and-objects-using-b
+ash-scripting/36771175
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Lo mismo en C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Anatomía de un objeto
 \end_layout
@@ -4454,7 +4676,23 @@ Pensando en objetos
 \end_layout
 
 \begin_layout Chapter
+Extendiendo la orientación a objetos
+\end_layout
+
+\begin_layout Section
+POO en C y Shell.
+\end_layout
+
+\begin_layout Chapter
 Clases y objetos
+\end_layout
+
+\begin_layout Standard
+Una clase es una representación estructurada de un ente real o imaginario,
+ y al ejecutar el programa creamos un objeto de esa clase.
+ Por ejemplo, la definición de un objeto en el código es mediante una clase.
+ Esa clase genera un objeto de su tipo al arrancar el programa.
+ No debemos confundir ambos términos, aunque a priori parezcan similares.
 \end_layout
 
 \begin_layout Section
@@ -4716,6 +4954,46 @@ Proponer casos reales o ficticios de error, e investigar de dónde viene
  el fallo.
 \end_layout
 
+\begin_layout Part
+Caso práctico: IA de RTS
+\end_layout
+
+\begin_layout Chapter
+Herramientas
+\end_layout
+
+\begin_layout Section
+Godot
+\end_layout
+
+\begin_layout Section
+Unity
+\end_layout
+
+\begin_layout Section
+Unreal Engine
+\end_layout
+
+\begin_layout Section
+Blender
+\end_layout
+
+\begin_layout Chapter
+Inteligencia Artificial
+\end_layout
+
+\begin_layout Section
+Fundamentos de IA
+\end_layout
+
+\begin_layout Section
+Algoritmos vs IA
+\end_layout
+
+\begin_layout Chapter
+Juegos de estrategia
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -4734,6 +5012,22 @@ literal "false"
 \end_inset
 
  con sucesivas mejoras.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Programación Orientada a Objetos con C++.
+ 5a Ed.
+ Fco.
+ Javier Ceballos.
+ Ed.
+ Ra-Ma.
+ 2018
 \end_layout
 
 \begin_layout Bibliography
