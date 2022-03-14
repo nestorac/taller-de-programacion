@@ -94,44 +94,6 @@
 
 \begin_body
 
-\begin_layout Quotation
-En este curso vamos a usar varios lenguajes de programación indistintamente,
- es decir, este curso es independiente del lenguaje.
- Es decir, cuando terminemos el curso seremos políglotas.
-\end_layout
-
-\begin_layout Quotation
-Todo tendrá un enfoque práctico, se trata de llevar la teoría a la práctica,
- y ver cómo se comporta el lenguaje en el mundo real.
- Se incluirán en casa apartado opiniones expertas que arrojen luz.
- En su día leí un artículo muy bueno de un programador experto explicando
- las limitaciones de la POO en el mundo real, y sus carencias.
-\end_layout
-
-\begin_layout Quotation
-Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
- varios lenguajes.
-\end_layout
-
-\begin_layout Quotation
-Se ofrece un 
-\series bold
-enfoque orientado a la lectura de código
-\series default
- para no reinventar la rueda.
-\end_layout
-
-\begin_layout Quotation
-A lo largo del libro se van a mostrar fragmentos de código relevantes.
- Vamos a dirigir nuestros esfuerzos hacia el desarrollo de herramientas
- de IA para juegos de estrategia 2 y 3D.
-\end_layout
-
-\begin_layout Quotation
-Dinámica: aprende a leer, rellena los huecos, calcula el resultado, explica
- el funcionamiento.
-\end_layout
-
 \begin_layout Title
 Taller de programación en Reciclanet
 \end_layout
@@ -155,6 +117,44 @@ LatexCommand tableofcontents
 
 \begin_layout Part
 Nociones básicas
+\end_layout
+
+\begin_layout Standard
+En este curso vamos a usar varios lenguajes de programación indistintamente,
+ es decir, este curso es independiente del lenguaje.
+ Es decir, cuando terminemos el curso seremos políglotas.
+\end_layout
+
+\begin_layout Standard
+Todo tendrá un enfoque práctico, se trata de llevar la teoría a la práctica,
+ y ver cómo se comporta el lenguaje en el mundo real.
+ Se incluirán en casa apartado opiniones expertas que arrojen luz.
+ En su día leí un artículo muy bueno de un programador experto explicando
+ las limitaciones de la POO en el mundo real, y sus carencias.
+\end_layout
+
+\begin_layout Standard
+Cada sección llevará ejemplos sencillos relacionados con lo expuesto, en
+ varios lenguajes.
+\end_layout
+
+\begin_layout Standard
+Se ofrece un 
+\series bold
+enfoque orientado a la lectura de código
+\series default
+ para no reinventar la rueda.
+\end_layout
+
+\begin_layout Standard
+A lo largo del libro se van a mostrar fragmentos de código relevantes.
+ Vamos a dirigir nuestros esfuerzos hacia el desarrollo de herramientas
+ de IA para juegos de estrategia 2 y 3D.
+\end_layout
+
+\begin_layout Standard
+Dinámica: aprende a leer, rellena los huecos, calcula el resultado, explica
+ el funcionamiento.
 \end_layout
 
 \begin_layout Chapter
@@ -4439,12 +4439,52 @@ Cómo trabajar en equipo
 Sistemas de control de versiones
 \end_layout
 
+\begin_layout Section
+Documentar el código
+\end_layout
+
 \begin_layout Chapter
 Bibliotecas estándar
 \end_layout
 
+\begin_layout Standard
+El lenguaje de programación se implementa en varias arquitecturas.
+ Por ejemplo, podemos usar C++ en Windows, pero también en Linux o Mac.
+ Hace años, los desarrolladores se dieron cuenta de que es valioso tener
+ diferentes recursos en cada plataforma pero también garantizar unos mínimos
+ comunes, de ahí surgió la idea de estandarizar para todas las plataformas
+ unas librerías comunes de mínimos, llamadas 
+\shape italic
+bibliotecas estándar
+\shape default
+.
+\end_layout
+
 \begin_layout Chapter
 Pruebas
+\end_layout
+
+\begin_layout Standard
+Cuando hacemos programas introducimos errores sin darnos cuenta.
+ Se habla de un error cada tres líneas.
+ La sintaxis suele ser un problema cuando programamos, ya que en algunos
+ lenguajes es muy estricta.
+\end_layout
+
+\begin_layout Standard
+En programas grandes, a veces, es necesario corregir errores y al hacerlo,
+ destapamos otros errores.
+ Es algo muy típico, se llama 
+\shape italic
+regresión
+\shape default
+.
+ Para evitarlo, se elaboran casos de prueba que evalúan el comportamiento
+ del programa en varias situaciones cuando se realiza algún cambio.
+\end_layout
+
+\begin_layout Standard
+Por ejemplo
 \end_layout
 
 \begin_layout Section
