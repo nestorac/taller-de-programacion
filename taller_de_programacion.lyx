@@ -4784,6 +4784,10 @@ Flujos
 Gestión de errores
 \end_layout
 
+\begin_layout Standard
+En todos los programas pueden producirse fallos, que el programa debe
+\end_layout
+
 \begin_layout Section
 Excepciones
 \end_layout
