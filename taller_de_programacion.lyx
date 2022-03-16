@@ -2525,6 +2525,10 @@ O.
 Otros operadores
 \end_layout
 
+\begin_layout Chapter
+Pseudo código
+\end_layout
+
 \begin_layout Part
 Scripting
 \end_layout
@@ -4063,6 +4067,10 @@ Parámetros
 Valor de retorno
 \end_layout
 
+\begin_layout Chapter
+Recursividad
+\end_layout
+
 \begin_layout Part
 Programación Orientada a Objetos
 \end_layout
@@ -4484,11 +4492,287 @@ regresión
 \end_layout
 
 \begin_layout Standard
-Por ejemplo
+Por ejemplo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class Coche:
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __init__(self, velocidad):
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.velocidad = velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+    def mostrar(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if self.velocidad < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "Marcha atrás" )
+\end_layout
+
+\begin_layout Plain Layout
+
+        else:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "El coche va a " + str(self.velocidad) )
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(120)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar()
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(-20)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es un código sencillo, toma como parámetro la velocidad y la muestra sólo
+ si es mayor o igual a cero.
+ De lo contrario, muestra un mensaje, 
+\begin_inset Quotes fld
+\end_inset
+
+Marcha atrás
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El problema surge cuando alguien revisa el código porque, digamos, hay un
+ coche que no tiene marcha atrás, entonces transforma el código en el siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class Coche:
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __init__(self, velocidad):
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.velocidad = velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+    def mostrar(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if self.velocidad >= 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "El coche va a " + str(self.velocidad) )
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(120)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar()
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(-20)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este código no muestra nada cuando la velocidad es menor que cero.
+ El problema es que el coche antiguo, que el autor de esta modificación
+ por lo visto, desconoce, sí permite la marcha atrás.
+ Estamos ante un caso de un error que aparece al corregir otro error.
+ Para evitarlo, deberíamos tener un test automatizado que compruebe los
+ casos especiales, nos ayudaría a detectar el fallo que sin querer hemos
+ causado y podríamos hacer una corrección más apropiada, como en el siguiente
+ código, de forma que no se rompa el funcionamiento del coche antiguo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class Coche:
+\end_layout
+
+\begin_layout Plain Layout
+
+    def __init__(self, velocidad):
+\end_layout
+
+\begin_layout Plain Layout
+
+        self.velocidad = velocidad
+\end_layout
+
+\begin_layout Plain Layout
+
+    def mostrar(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if self.velocidad >= 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "El coche va a " + str(self.velocidad) )
+\end_layout
+
+\begin_layout Plain Layout
+
+    def mostrar_old(self):
+\end_layout
+
+\begin_layout Plain Layout
+
+        if self.velocidad < 0:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "Marcha atrás" )
+\end_layout
+
+\begin_layout Plain Layout
+
+        else:
+\end_layout
+
+\begin_layout Plain Layout
+
+            print( "El coche va a " + str(self.velocidad) )
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(120)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar()
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar_old()
+\end_layout
+
+\begin_layout Plain Layout
+
+coche = Coche(-20)
+\end_layout
+
+\begin_layout Plain Layout
+
+coche.mostrar_old()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con esta modificación, y adaptando los casos de prueba y el resto del código,
+ ahora tenemos dos funciones que muestran la velocidad, una adaptada al
+ coche nuevo sin marcha atrás, otra adaptada al coche antiguo con marcha
+ atrás.
 \end_layout
 
 \begin_layout Section
 Casos de prueba
+\end_layout
+
+\begin_layout Standard
+Veamos un ejemplo de casos de prueba, con un código de lo más sencillo.
 \end_layout
 
 \begin_layout Section
