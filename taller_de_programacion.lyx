@@ -122,7 +122,11 @@ Nociones básicas
 \begin_layout Standard
 En este curso vamos a usar varios lenguajes de programación indistintamente,
  es decir, este curso es independiente del lenguaje.
- Es decir, cuando terminemos el curso seremos políglotas.
+ Cuando terminemos el curso, seremos 
+\shape italic
+políglotas
+\shape default
+.
 \end_layout
 
 \begin_layout Standard
@@ -335,562 +339,6 @@ literal "false"
 \end_layout
 
 \begin_layout Chapter
-Leer código
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Capitulu 8 y capitulo 11 se puede hacer un capitulo grande.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Ejemplo 1: 
-\begin_inset Quotes eld
-\end_inset
-
-Hola, mundo
-\begin_inset Quotes erd
-\end_inset
-
-.
- Lo básico
-\end_layout
-
-\begin_layout Subsection
-En python 3
-\end_layout
-
-\begin_layout Subsubsection
-Opción A
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Python"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-print('Hola, mundo.')
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opción B
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Python"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-import __hello__
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opción C
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Python"
-inline false
-status open
-
-\begin_layout Plain Layout
-
->>> hm="Hola, mundo."
-\end_layout
-
-\begin_layout Plain Layout
-
->>> hm
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-En Bash
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=bash"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#!/bin/bash
-\end_layout
-
-\begin_layout Plain Layout
-
-echo "Hola, mundo."
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-En C
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=C"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <stdio.h>
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int main()
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-	printf("¡Hola, mundo!
-\backslash
-n");
-\end_layout
-
-\begin_layout Plain Layout
-
-	return 0;
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-En C++
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language={C++}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-#include <iostream>
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-using namespace std;
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-int main()
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-	cout << "¡Hola, mundo!" << std::endl;
-\end_layout
-
-\begin_layout Plain Layout
-
-	return 0;
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-En Java
-\end_layout
-
-\begin_layout Subsubsection
-Opción A
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-class HolaMundo
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-	public static void main(String[] args)
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\end_layout
-
-\begin_layout Plain Layout
-
-		System.out.println("Hola, mundo.");
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opción B
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=Java"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-class HolaMundo
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-	public static void main(String[] args)
-\end_layout
-
-\begin_layout Plain Layout
-
-	{
-\end_layout
-
-\begin_layout Plain Layout
-
-        javax.swing.JOptionPane.showMessageDialog(null,"Hola, mundo.");
-\end_layout
-
-\begin_layout Plain Layout
-
-    }
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-En PHP
-\end_layout
-
-\begin_layout Subsubsection
-Opción A
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=PHP"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-<?php echo '¡Hola mundo!'; ?>
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opción B
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=PHP"
-inline false
-status open
-
-\begin_layout Plain Layout
-
- <?php print("¡Hola, mundo!"); ?>
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Opción C
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=PHP"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-<?php
-\end_layout
-
-\begin_layout Plain Layout
-
-	//Ejemplo "Hola, mundo" PHP + JS (Servidor -> Cliente)
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	$txt = "Hola, mundo";
-\end_layout
-
-\begin_layout Plain Layout
-
-	echo "<script> alert('$txt'); </script>";
-\end_layout
-
-\begin_layout Plain Layout
-
-?>
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Lenguajes minoritarios
-\end_layout
-
-\begin_layout Subsubsection
-En Brainfuck
-\end_layout
-
-\begin_layout Standard
-Brainfuck es un lenguaje llevado al extremo con un compilador muy sencillo,
- diseñado por Urban Müller en 1993.
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.++
-+.------.--------.>+.>.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Ejemplo 2: El kernel panic de Linux v0.1 (1991)
-\end_layout
-
-\begin_layout Standard
-El kernel en su versión inicial, la 0.1, contiene alrdedor de 7.000 líneas
- de código C, unas mil de ensamblador, y pesa unos 70KB comprimido en tar.gz.
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language=C,numbers=left"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-/*
-\end_layout
-
-\begin_layout Plain Layout
-
- * This function is used through-out the kernel (includeinh mm and fs)
-\end_layout
-
-\begin_layout Plain Layout
-
- * to indicate a major problem.
-\end_layout
-
-\begin_layout Plain Layout
-
- */
-\end_layout
-
-\begin_layout Plain Layout
-
-#include <linux/kernel.h>
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-volatile void panic(const char * s)
-\end_layout
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\begin_layout Plain Layout
-
-	printk("Kernel panic: %s
-\backslash
-n
-\backslash
-r",s);
-\end_layout
-
-\begin_layout Plain Layout
-
-	for(;;);
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Claves
-\end_layout
-
-\begin_layout Itemize
-Función volátil
-\end_layout
-
-\begin_layout Itemize
-Bucle infinito
-\end_layout
-
-\begin_layout Section
-Ejemplo 3: ...
-\end_layout
-
-\begin_layout Subsection
-En C
-\end_layout
-
-\begin_layout Subsection
-Lenguajes minoritarios
-\end_layout
-
-\begin_layout Chapter
 Paradigmas de programación
 \end_layout
 
@@ -898,8 +346,66 @@ Paradigmas de programación
 Programación procedimental
 \end_layout
 
+\begin_layout Standard
+La programación procedimental divide las tareas en procedimientos, es decir,
+ separa un problema en fragmentos.
+ Dichos procedimientos se comunican entre sí.
+ Cuando llamamos a un procedimiento y nos devuelve un resultado en función
+ de la entrada, estamos hablando de una función.
+\end_layout
+
+\begin_layout Standard
+Hay que calcular el lado de un cubo en función de un color y mostrarlo por
+ pantalla.
+ En programación procedimental, se haría:
+\end_layout
+
+\begin_layout Enumerate
+Llamada a la función 
+\shape italic
+calcular_lado_cubo
+\shape default
+, que devuelve el tamaño del lado del cubo, en función de su color.
+\end_layout
+
+\begin_layout Enumerate
+Llamada al procedimiento 
+\shape italic
+mostrar_cubo
+\shape default
+, que muestra un cubo por pantalla, se le pasa como parámetro el lado del
+ cubo.
+\end_layout
+
+\begin_layout Standard
+Los parámetros se indican entre paréntesis, por ejemplo, 
+\shape italic
+calcular_lado_cubo(color)
+\shape default
+.
+\end_layout
+
 \begin_layout Section
 Programación orientada a objetos
+\end_layout
+
+\begin_layout Standard
+En la programación orientada a objetos, se trata de maximizar la reutilización
+ de código, es decir, no reinventar la rueda.
+ Por este motivo, todos los conceptos que manejamos son traducidos en objetos,
+ con unas características determinadas y que pueden realizar acciones.
+\end_layout
+
+\begin_layout Standard
+Por ejemplo, tomamos una pelota.
+ Internamente definimos su tamaño en cm, su elasticidad, que provocará un
+ determinado rebote, su color, su posición...
+ pero es que además una pelota puede ser golpeada con una determinada fuerza
+ que modificará su posición en función del tiempo.
+\end_layout
+
+\begin_layout Standard
+Los objetos tienen propiedades, pero también métodos que realizan acciones.
 \end_layout
 
 \begin_layout Chapter
@@ -2525,8 +2031,1202 @@ O.
 Otros operadores
 \end_layout
 
+\begin_layout Part
+Leer código
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Capitulo 8 y capitulo 11 se puede hacer un capitulo grande.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejemplo 1: 
+\begin_inset Quotes eld
+\end_inset
+
+Hola, mundo
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Lo básico
+\end_layout
+
+\begin_layout Subsection
+En python 3
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print('Hola, mundo.')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import __hello__
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Python"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> hm="Hola, mundo."
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> hm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Bash
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=bash"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#!/bin/bash
+\end_layout
+
+\begin_layout Plain Layout
+
+echo "Hola, mundo."
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("¡Hola, mundo!
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+#include <iostream>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+using namespace std;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main()
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	cout << "¡Hola, mundo!" << std::endl;
+\end_layout
+
+\begin_layout Plain Layout
+
+	return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En Java
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+		System.out.println("Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=Java"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+class HolaMundo
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	public static void main(String[] args)
+\end_layout
+
+\begin_layout Plain Layout
+
+	{
+\end_layout
+
+\begin_layout Plain Layout
+
+        javax.swing.JOptionPane.showMessageDialog(null,"Hola, mundo.");
+\end_layout
+
+\begin_layout Plain Layout
+
+    }
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+En PHP
+\end_layout
+
+\begin_layout Subsubsection
+Opción A
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php echo '¡Hola mundo!'; ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción B
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ <?php print("¡Hola, mundo!"); ?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Opción C
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=PHP"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<?php
+\end_layout
+
+\begin_layout Plain Layout
+
+	//Ejemplo "Hola, mundo" PHP + JS (Servidor -> Cliente)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	$txt = "Hola, mundo";
+\end_layout
+
+\begin_layout Plain Layout
+
+	echo "<script> alert('$txt'); </script>";
+\end_layout
+
+\begin_layout Plain Layout
+
+?>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
+\begin_layout Subsubsection
+En Brainfuck
+\end_layout
+
+\begin_layout Standard
+Brainfuck es un lenguaje llevado al extremo con un compilador muy sencillo,
+ diseñado por Urban Müller en 1993.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.++
++.------.--------.>+.>.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Ejemplo 2: El kernel panic de Linux v0.1 (1991)
+\end_layout
+
+\begin_layout Standard
+El kernel en su versión inicial, la 0.1, contiene alrdedor de 7.000 líneas
+ de código C, unas mil de ensamblador, y pesa unos 70KB comprimido en tar.gz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language=C,numbers=left"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/*
+\end_layout
+
+\begin_layout Plain Layout
+
+ * This function is used through-out the kernel (includeinh mm and fs)
+\end_layout
+
+\begin_layout Plain Layout
+
+ * to indicate a major problem.
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <linux/kernel.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+volatile void panic(const char * s)
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	printk("Kernel panic: %s
+\backslash
+n
+\backslash
+r",s);
+\end_layout
+
+\begin_layout Plain Layout
+
+	for(;;);
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Claves
+\end_layout
+
+\begin_layout Itemize
+Función volátil
+\end_layout
+
+\begin_layout Itemize
+Bucle infinito
+\end_layout
+
+\begin_layout Section
+Ejemplo 3: ...
+\end_layout
+
+\begin_layout Subsection
+En C
+\end_layout
+
+\begin_layout Subsection
+Lenguajes minoritarios
+\end_layout
+
+\begin_layout Part
+Escribir código
+\end_layout
+
+\begin_layout Standard
+Antes de escribir es necesario aprender a leer.
+ A nadie se le ocurriría enseñar a los niños a escribir antes que a leer,
+ y menos aún, únicamente a escribir.
+ Leer es la base de la programación, es lo que nos permite entender el software
+ libre escrito por otros y aprender a hacer nuestro código de mejor calidad.
+\end_layout
+
+\begin_layout Part
+Lenguaje ensamblador
+\end_layout
+
 \begin_layout Chapter
-Pseudo código
+Código máquina
+\end_layout
+
+\begin_layout Chapter
+Instrucciones
+\end_layout
+
+\begin_layout Part
+Programación procedimental
+\end_layout
+
+\begin_layout Chapter
+Entrada y salida del programa
+\end_layout
+
+\begin_layout Chapter
+Sentencias de control de flujo
+\end_layout
+
+\begin_layout Section
+Sentencias incondicionales
+\end_layout
+
+\begin_layout Subsection
+GOTO
+\end_layout
+
+\begin_layout Subsection
+break
+\end_layout
+
+\begin_layout Subsection
+return (pascal)
+\end_layout
+
+\begin_layout Section
+Sentencias condicionales
+\end_layout
+
+\begin_layout Subsection
+if..else
+\end_layout
+
+\begin_layout Standard
+La sentencia 
+\shape italic
+if
+\shape default
+ comprueba una condición, si se cumple hace algo, si no, se puede hacer
+ otra cosa con la muletilla 
+\shape italic
+else
+\shape default
+.
+ Veamos unos ejemplos
+\end_layout
+
+\begin_layout Subsubsection
+Python
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if condición:
+\end_layout
+
+\begin_layout Plain Layout
+
+	print("Se cumple la condición.")
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+	print(
+\begin_inset Quotes fld
+\end_inset
+
+No se cumple la condición.
+\begin_inset Quotes frd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+C/C++
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if (condición) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Se cumple la condición.
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+else {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// No se cumple la condición.
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Java
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if (condición) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Se cumple la condición.
+\end_layout
+
+\begin_layout Plain Layout
+
+} else {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// No se cumple la condición.
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Bash
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+if [[ condición ]]
+\end_layout
+
+\begin_layout Plain Layout
+
+then
+\end_layout
+
+\begin_layout Plain Layout
+
+	echo "Se cumple la condición."
+\end_layout
+
+\begin_layout Plain Layout
+
+else
+\end_layout
+
+\begin_layout Plain Layout
+
+	echo "No se cumple la condición."
+\end_layout
+
+\begin_layout Plain Layout
+
+fi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+while
+\end_layout
+
+\begin_layout Subsubsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Java
+\end_layout
+
+\begin_layout Subsubsection
+Bash
+\end_layout
+
+\begin_layout Subsection
+try
+\end_layout
+
+\begin_layout Subsubsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Java
+\end_layout
+
+\begin_layout Subsubsection
+Bash
+\end_layout
+
+\begin_layout Subsection
+switch
+\end_layout
+
+\begin_layout Subsubsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Java
+\end_layout
+
+\begin_layout Subsubsection
+Bash
+\end_layout
+
+\begin_layout Subsection
+caseof
+\end_layout
+
+\begin_layout Subsubsection
+Python
+\end_layout
+
+\begin_layout Subsubsection
+C/C++
+\end_layout
+
+\begin_layout Subsubsection
+Java
+\end_layout
+
+\begin_layout Subsubsection
+Bash
+\end_layout
+
+\begin_layout Chapter
+Funciones
+\end_layout
+
+\begin_layout Section
+Concepto de función en programación
+\end_layout
+
+\begin_layout Section
+Llamada o invocación a una función
+\end_layout
+
+\begin_layout Section
+Parámetros
+\end_layout
+
+\begin_layout Section
+Valor de retorno
+\end_layout
+
+\begin_layout Part
+Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Chapter
+Elementos básicos de la Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Section
+Concepto de objeto
+\end_layout
+
+\begin_layout Standard
+Un objeto es una representación informática de un concepto.
+ ¿Por qué digo 
+\begin_inset Quotes fld
+\end_inset
+
+informática
+\begin_inset Quotes frd
+\end_inset
+
+? Porque lo que hacemos no es describirlo con un lenguaje humano, sino modelarlo
+ mediante valores y atributos, y no es lo mismo.
+ No decimos 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene ruedas grandes
+\begin_inset Quotes frd
+\end_inset
+
+, sino 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene 4 ruedas, cada una mide 40cm
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En informática no se describen objetos de la forma abstracta a la que estamos
+ acostumbrados, sino que se atribuyen valores a etiquetas: la etiqueta 
+\begin_inset Quotes fld
+\end_inset
+
+rueda
+\begin_inset Quotes frd
+\end_inset
+
+ tiene un valor de 
+\begin_inset Quotes fld
+\end_inset
+
+40
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//Ejemplo básico de objeto representado en una clase en C++
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Objeto {
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Java
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Objeto {
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Python
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Objeto:
+\end_layout
+
+\begin_layout Plain Layout
+
+	i=1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// Lo mismo en Shell
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Existe una manera de hacerlo en Shell, investigar más.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+https://stackoverflow.com/questions/36771080/creating-classes-and-objects-using-b
+ash-scripting/36771175
+\end_layout
+
+\end_inset
+
+
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Lo mismo en C
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Anatomía de un objeto
+\end_layout
+
+\begin_layout Section
+Beneficios de la programación orientada a objetos
+\end_layout
+
+\begin_layout Section
+Pensando en objetos
+\end_layout
+
+\begin_layout Chapter
+Extendiendo la orientación a objetos
+\end_layout
+
+\begin_layout Section
+POO en C y Shell.
+\end_layout
+
+\begin_layout Chapter
+Clases y objetos
+\end_layout
+
+\begin_layout Standard
+Una clase es una representación estructurada de un ente real o imaginario,
+ y al ejecutar el programa creamos un objeto de esa clase.
+ Por ejemplo, la definición de un objeto en el código es mediante una clase.
+ Esa clase genera un objeto de su tipo al arrancar el programa.
+ No debemos confundir ambos términos, aunque a priori parezcan similares.
+\end_layout
+
+\begin_layout Section
+Definición de una clase
+\end_layout
+
+\begin_layout Section
+Miembros de una clase
+\end_layout
+
+\begin_layout Section
+Sobrecarga
+\end_layout
+
+\begin_layout Subsection
+de operadores
+\end_layout
+
+\begin_layout Subsection
+de métodos
+\end_layout
+
+\begin_layout Section
+Iniciación de un objeto
+\end_layout
+
+\begin_layout Section
+Derivación de clases
+\end_layout
+
+\begin_layout Chapter
+Encapsulamiento
+\end_layout
+
+\begin_layout Section
+Modularidad
+\end_layout
+
+\begin_layout Section
+Ocultamiento de la implementación
+\end_layout
+
+\begin_layout Section
+Protección de variables y métodos
+\end_layout
+
+\begin_layout Chapter
+Herencia
+\end_layout
+
+\begin_layout Section
+Jerarquía de clases
+\end_layout
+
+\begin_layout Section
+Tipos herencia
+\end_layout
+
+\begin_layout Chapter
+Polimorfismo
+\end_layout
+
+\begin_layout Chapter
+Programación genérica (plantillas)
 \end_layout
 
 \begin_layout Part
@@ -2546,6 +3246,18 @@ La shell es un caso especial de lenguaje de programación.
 
 \begin_layout Section
 Shell interactiva
+\end_layout
+
+\begin_layout Standard
+Al ejecutar la shell, algo tan sencillo como abrir una terminal en Linux,
+ se nos presenta un símbolo en el que podemos teclear comandos, pero también
+ improvisar órdenes más complejas, con sentencias de control, etc.
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+user@hostname:~$ 
 \end_layout
 
 \begin_layout Section
@@ -3525,7 +4237,135 @@ ntfs-3g
 \series bold
 dosfstools
 \series default
- if you need to work with FAT file systems.
+==== BASE ====
+ is a tool for manipulating NVM-Express disks.
+\end_layout
+
+\begin_layout Part
+Programación procedimental
+\end_layout
+
+\begin_layout Chapter
+Entrada y salida del programa
+\end_layout
+
+\begin_layout Chapter
+Sentencias de control de flujo
+\end_layout
+
+\begin_layout Section
+Sentencias incondicionales
+\end_layout
+
+\begin_layout Section
+Sentencias condicionales
+\end_layout
+
+\begin_layout Chapter
+Funciones
+\end_layout
+
+\begin_layout Section
+Concepto de función en programación
+\end_layout
+
+\begin_layout Section
+Llamada o invocación a una función
+\end_layout
+
+\begin_layout Section
+Parámetros
+\end_layout
+
+\begin_layout Section
+Valor de retorno
+\end_layout
+
+\begin_layout Part
+Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Chapter
+Elementos básicos de la Programación Orientada a Objetos
+\end_layout
+
+\begin_layout Section
+Concepto de objeto
+\end_layout
+
+\begin_layout Standard
+Un objeto es una representación informática de un concepto.
+ ¿Por qué digo 
+\begin_inset Quotes fld
+\end_inset
+
+informática
+\begin_inset Quotes frd
+\end_inset
+
+? Porque lo que hacemos no es describirlo con un lenguaje humano, sino modelarlo
+ mediante valores y atributos, y no es lo mismo.
+ No decimos 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene ruedas grandes
+\begin_inset Quotes frd
+\end_inset
+
+, sino 
+\begin_inset Quotes fld
+\end_inset
+
+este objeto tiene 4 ruedas, cada una mide 40cm
+\begin_inset Quotes frd
+\end_inset
+
+.
+ En informática no se describen objetos de la forma abstracta a la que estamos
+ acostumbrados, sino que se atribuyen valores a etiquetas: la etiqueta 
+\begin_inset Quotes fld
+\end_inset
+
+rueda
+\begin_inset Quotes frd
+\end_inset
+
+ tiene un valor de 
+\begin_inset Quotes fld
+\end_inset
+
+40
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={C++}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+//Ejemplo básico de objeto representado en una clase en C++
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+class Objeto {
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+==== BASE ====
 \end_layout
 
 \begin_layout Subsection
@@ -4028,346 +4868,7 @@ nvme
 \end_layout
 
 \begin_layout Part
-Programación procedimental
-\end_layout
-
-\begin_layout Chapter
-Entrada y salida del programa
-\end_layout
-
-\begin_layout Chapter
-Sentencias de control de flujo
-\end_layout
-
-\begin_layout Section
-Sentencias incondicionales
-\end_layout
-
-\begin_layout Section
-Sentencias condicionales
-\end_layout
-
-\begin_layout Chapter
-Funciones
-\end_layout
-
-\begin_layout Section
-Concepto de función en programación
-\end_layout
-
-\begin_layout Section
-Llamada o invocación a una función
-\end_layout
-
-\begin_layout Section
-Parámetros
-\end_layout
-
-\begin_layout Section
-Valor de retorno
-\end_layout
-
-\begin_layout Chapter
-Recursividad
-\end_layout
-
-\begin_layout Part
-Programación Orientada a Objetos
-\end_layout
-
-\begin_layout Chapter
-Elementos básicos de la Programación Orientada a Objetos
-\end_layout
-
-\begin_layout Section
-Concepto de objeto
-\end_layout
-
-\begin_layout Standard
-Un objeto es una representación informática de un concepto.
- ¿Por qué digo 
-\begin_inset Quotes fld
-\end_inset
-
-informática
-\begin_inset Quotes frd
-\end_inset
-
-? Porque lo que hacemos no es describirlo con un lenguaje humano, sino modelarlo
- mediante valores y atributos, y no es lo mismo.
- No decimos 
-\begin_inset Quotes fld
-\end_inset
-
-este objeto tiene ruedas grandes
-\begin_inset Quotes frd
-\end_inset
-
-, sino 
-\begin_inset Quotes fld
-\end_inset
-
-este objeto tiene 4 ruedas, cada una mide 40cm
-\begin_inset Quotes frd
-\end_inset
-
-.
- En informática no se describen objetos de la forma abstracta a la que estamos
- acostumbrados, sino que se atribuyen valores a etiquetas: la etiqueta 
-\begin_inset Quotes fld
-\end_inset
-
-rueda
-\begin_inset Quotes frd
-\end_inset
-
- tiene un valor de 
-\begin_inset Quotes fld
-\end_inset
-
-40
-\begin_inset Quotes frd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "language={C++}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-//Ejemplo básico de objeto representado en una clase en C++
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-class Objeto {
-\end_layout
-
-\begin_layout Plain Layout
-
-};
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-// Lo mismo en Java
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-public class Objeto {
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-// Lo mismo en Python
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-class Objeto:
-\end_layout
-
-\begin_layout Plain Layout
-
-	i=1
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-// Lo mismo en Shell
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-Existe una manera de hacerlo en Shell, investigar más.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Marginal
-status open
-
-\begin_layout Plain Layout
-https://stackoverflow.com/questions/36771080/creating-classes-and-objects-using-b
-ash-scripting/36771175
-\end_layout
-
-\end_inset
-
-
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-Lo mismo en C
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Anatomía de un objeto
-\end_layout
-
-\begin_layout Section
-Beneficios de la programación orientada a objetos
-\end_layout
-
-\begin_layout Section
-Pensando en objetos
-\end_layout
-
-\begin_layout Chapter
-Extendiendo la orientación a objetos
-\end_layout
-
-\begin_layout Section
-POO en C y Shell.
-\end_layout
-
-\begin_layout Chapter
-Clases y objetos
-\end_layout
-
-\begin_layout Standard
-Una clase es una representación estructurada de un ente real o imaginario,
- y al ejecutar el programa creamos un objeto de esa clase.
- Por ejemplo, la definición de un objeto en el código es mediante una clase.
- Esa clase genera un objeto de su tipo al arrancar el programa.
- No debemos confundir ambos términos, aunque a priori parezcan similares.
-\end_layout
-
-\begin_layout Section
-Definición de una clase
-\end_layout
-
-\begin_layout Section
-Miembros de una clase
-\end_layout
-
-\begin_layout Section
-Sobrecarga
-\end_layout
-
-\begin_layout Subsection
-de operadores
-\end_layout
-
-\begin_layout Subsection
-de métodos
-\end_layout
-
-\begin_layout Section
-Iniciación de un objeto
-\end_layout
-
-\begin_layout Section
-Derivación de clases
-\end_layout
-
-\begin_layout Chapter
-Encapsulamiento
-\end_layout
-
-\begin_layout Section
-Modularidad
-\end_layout
-
-\begin_layout Section
-Ocultamiento de la implementación
-\end_layout
-
-\begin_layout Section
-Protección de variables y métodos
-\end_layout
-
-\begin_layout Chapter
-Herencia
-\end_layout
-
-\begin_layout Section
-Jerarquía de clases
-\end_layout
-
-\begin_layout Section
-Tipos herencia
-\end_layout
-
-\begin_layout Chapter
-Polimorfismo
-\end_layout
-
-\begin_layout Chapter
-Programación genérica (plantillas)
+Programación web
 \end_layout
 
 \begin_layout Part
@@ -4409,6 +4910,10 @@ Flujos
 
 \begin_layout Chapter
 Gestión de errores
+\end_layout
+
+\begin_layout Standard
+En todos los programas pueden producirse fallos, que el programa debe
 \end_layout
 
 \begin_layout Section
@@ -4951,10 +5456,10 @@ Juegos de estrategia
 \end_layout
 
 \begin_layout Bibliography
+\start_of_appendix
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "key-1"
-literal "false"
 
 \end_inset
 
@@ -5004,7 +5509,7 @@ Libro: Programación shell.
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+key "key-2-1"
 
 \end_inset
 
@@ -5127,7 +5632,7 @@ Producir software de código abierto: producingoss.com/es/
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+key "key-2-1"
 literal "false"
 
 \end_inset
@@ -5148,7 +5653,7 @@ Ejemplos tomados de linuxhint.com/30_bash_script_examples/
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+key "key-2-1"
 
 \end_inset
 
@@ -5180,7 +5685,7 @@ Ejemplos obtenidos de github.com/epety/100-shell-script-examples
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-2"
+key "key-2-1"
 
 \end_inset
 
